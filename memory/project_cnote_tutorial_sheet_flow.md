@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 1763df05-ea22-4314-8d21-41768b3621ee
-  modified: 2026-07-30T10:07:51.278Z
+  modified: 2026-07-30T10:11:18.921Z
 ---
 
 ★260730 CNOTE(TieMing) 온보딩 씨앗홈 튜토리얼(명함/일정/할일)의 flow.html 시트 흐름 최종형. 많은 이터레이션 끝의 정본이니 다음 세션은 이 구조를 유지하고 임의로 되돌리지 말 것. 관련 [[project_cnote_v06_onboarding_jit]] [[reference_cnote_flow_player]].
@@ -25,4 +25,6 @@ metadata:
 
 **SeedCard 완료 카드**: done=`bg-surface-raised`+inset 스크림(bg-surface-overlay opacity-60≈30%블랙)으로 dim, 완료 버튼 size=large(활성과 동일 높이)·disabled.
 
-파일: flow.html(SHEET_OPEN/SHEET_ROUTE/isPass/storyUrl/openSheet/sheetRender), TaskList(embedded), Person/Calendar/TaskList(하단 홈으로|닫기), TutorialCallout(버튼 제거·메시지만), Home(justCompleted), SeedCard(done dim).
+5. **시트 배경 흰색**(사용자): 시트 화면 root가 `bg-canvas`(회색)라, flow.html `whitenSheet(fr)`가 **시트 iframe에만** `:root/.dark{--color-canvas:var(--color-surface)!important}` 주입(sf.onload에서 applyDarkTo와 함께). 화면 코드 수정 없이 모든 시트 배경 흰색(다크=카드색). 라이트 --color-canvas=#F2F3F5→#fff.
+
+파일: flow.html(SHEET_OPEN/SHEET_ROUTE/storyUrl/openSheet/sheetRender/whitenSheet), TaskList(embedded), Person/Calendar/TaskList(하단 홈으로|닫기), TutorialCallout(버튼 제거·메시지만), Home(justCompleted), SeedCard(done dim).

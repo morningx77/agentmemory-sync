@@ -1,5 +1,7 @@
 # Memory Index
 
+- [CNOTE 튜토리얼 시트 흐름 정본](project_cnote_tutorial_sheet_flow.md) — ★260730 씨앗홈 튜토리얼(명함/일정/할일) flow.html 최종. payoff=시트안마무리·passthrough제거·시트=내용만(TaskList embedded, 탭바있는건 얘뿐)·하단[홈으로|닫기(→허브)]·시트배경 whitenSheet로 흰색·완료가이드카드
+
 - [회사↔집 agentmemory 동기화(방식1)](project_agentmemory_sync_cross_pc.md) — ★260729. GitHub 비공개 repo 경유(export JSON 집에서 직접읽기)+SessionEnd훅+30분스케줄러. .claude쓰기·git push는 auto필터 차단→로컬실행
 - [서비스명 Tieming·스플래시](project_cnote_brand_tieming.md) — ★260730 CNOTE 대외명=Tieming. SCR_SPLASH 신설(바이올렛·5노드·골드). v0.9.0. ★v0.9.2 온보딩 재설계(신규 SCR_SIGNUP_EMAIL 이메일+이름 통합·NAME_QUICK 삭제·소셜 WELCOME직행·나중에하기)
 - [메뉴 순서 정본=flows.json](reference_cnote_menu_order_ssot.md) — ★260730 프로토타입·flow.html·스토리북 메뉴순서를 flows.json flows[] 하나로 정본화(유틸리티 뒤로). export_menu_order→_menu_order.json(스토리북 계약)·build_flow_nav 꼬리덤프 수정·check-menu-order 게이트. 스토리북 불일치 23건 저널 전달
