@@ -1,0 +1,9 @@
+# OS/편집기 잡파일
+Thumbs.db
+.DS_Store
+*.tmp
+
+# 토큰·비밀은 절대 커밋 금지 (원격 인증은 .git/config 로컬에만)
+*.token
+*.secret
+.env
