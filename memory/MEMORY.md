@@ -1,7 +1,8 @@
 # Memory Index
 
 - [회사↔집 agentmemory 동기화(방식1)](project_agentmemory_sync_cross_pc.md) — ★260729. GitHub 비공개 repo 경유(export JSON 집에서 직접읽기)+SessionEnd훅+30분스케줄러. .claude쓰기·git push는 auto필터 차단→로컬실행
-- [서비스명 Tieming·스플래시](project_cnote_brand_tieming.md) — ★260730 CNOTE 대외명=Tieming. SCR_SPLASH 신설(바이올렛·5노드·골드). v0.9.0
+- [서비스명 Tieming·스플래시](project_cnote_brand_tieming.md) — ★260730 CNOTE 대외명=Tieming. SCR_SPLASH 신설(바이올렛·5노드·골드). v0.9.0. ★v0.9.2 온보딩 재설계(신규 SCR_SIGNUP_EMAIL 이메일+이름 통합·NAME_QUICK 삭제·소셜 WELCOME직행·나중에하기)
+- [메뉴 순서 정본=flows.json](reference_cnote_menu_order_ssot.md) — ★260730 프로토타입·flow.html·스토리북 메뉴순서를 flows.json flows[] 하나로 정본화(유틸리티 뒤로). export_menu_order→_menu_order.json(스토리북 계약)·build_flow_nav 꼬리덤프 수정·check-menu-order 게이트. 스토리북 불일치 23건 저널 전달
 - [Tieming BI·앱아이콘 방향](project_tieming_bi.md) — ★260729 BI=Tieming(Tie+Timing). 심볼=워드마크 m 파동/펄스, 오른쪽 정점만 골드. 다크 스퀘어클 앱아이콘
 - [CNOTE v0.8.0 설계변경 4건](project_cnote_v08_design_batch.md) — ★260728 일정등록 재구성·녹음알림 이관·캘린더→일정·홈카드2·관계카드. v0.8.4 캘린더필터·마이 재편. v0.8.5 디지털명함카드+SCR_PROFILE_EDIT
 - [CNOTE v0.6 씨앗홈·점진온보딩](project_cnote_v06_seed_onboarding.md) — ★260727 스토리북2 완료(aa55d03)·flow 20/20·SeedCard v2 파스텔 정본
