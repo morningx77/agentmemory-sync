@@ -5,7 +5,7 @@ shutil.copyfile(S, S + ".bak_260729")          # 백업
 d = json.load(io.open(S, encoding="utf-8"))
 
 # 세션 종료 시 sync-push.ps1을 분리(숨김) 프로세스로 실행 → 세션 종료 지연 없음
-cmd = r'''powershell -NoProfile -ExecutionPolicy Bypass -Command "Start-Process powershell -WindowStyle Hidden -ArgumentList '-NoProfile','-ExecutionPolicy','Bypass','-File','C:\Users\yscho\260610_ISPARK\.agentmemory-sync\sync-push.ps1'"'''
+cmd = r'''wscript.exe "C:\Users\yscho\260610_ISPARK\.agentmemory-sync\run-hidden.vbs"'''
 
 h = d.setdefault("hooks", {})
 h["SessionEnd"] = [{"hooks": [{"type": "command", "command": cmd,

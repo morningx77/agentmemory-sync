@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26da2990-5736-4b13-9636-9d5ffad0098d
-  modified: 2026-07-30T04:25:16.264Z
+  modified: 2026-07-30T05:48:10.593Z
 ---
 
 ★260730 CNOTE 앱의 **서비스명 = Tieming** 확정(사용자). 'tie'(인맥 연결) + 대화 기반. **★일괄 리네임 실행**: screen_design_v2 전 설계 소스(2midfi_*·docs·flow.html·link.html·scripts·data/*.json)에서 **대문자 'CNOTE'→'Tieming'** 치환(115건). **★소문자 'cnote' 인프라는 보존**(Firestore `cnote-64d56`·git repo `cnote-front`·폴더 `260610_C-Level_note`·배포경로) — 대문자만 치환해 자동 분리. CLAUDE.md·memory·01_docs(내부 repo 문서)는 미치환(내부명은 CNOTE 유지 가능·필요시 별도). **태그라인 = "대화 기반 인맥관리 서비스"**. (CNOTE=내부/repo 명, Tieming=대외 서비스명.)
@@ -20,4 +20,6 @@ metadata:
 
 **★AI 정리 결과 화면 9건 개선(v0.9.5·SCR_NOTE_RESULT|normal·2midfi_02)** — ①중복 배너(BANNER_CONTEXT_STAGE) 제거 ②'AI 정리 요약'→'요약' ③할일 체크박스 제거 ④요약 제목(SUMMARY_TITLE) 추가 ⑤할일 일정유도 칩(CHIP_TASK_DATE·미설정=점선 CHIP_ADD_TASK_DATE) ⑥'일정 후보'→'다음 일정 예약' ⑦일정 추가 버튼(BTN_ADD_SCHEDULE) ⑧할일 인물유도 칩(CHIP_TASK_PERSON·미연결=점선) ⑨하단 인물 연결하기(BTN_LINK_PERSON) 삭제→요약 섹션 인물 자동연결(AREA_LINKED_PERSON·수정·＋인물추가). ★personal 상태는 수동 인물연결 버튼 유지. SUMMARY_EDIT_MODE 기본 접힘 정리. 칩=점선(유도)/솔리드(설정) 2종. 게이트 163키·미커버0·눈검증 PASS.
 
-**★씨앗 홈 튜토리얼=큰 바텀시트 흐름(v0.9.6·2midfi_03)** — 튜토리얼을 전체화면 이동 대신 큰 바텀시트 팝업으로. **신규 3종**(bs-dimmed min-height:84vh·flex column·하단 CTA 고정): BS_TUTORIAL_CONTACT(연락처·미니 프리뷰)·BS_TUTORIAL_SCHEDULE(일정·간이폼)·BS_TUTORIAL_TASK(할일·간이폼). 각 BTN_TUTORIAL_DONE/LATER/CLOSE→SCR_HOME|seed-partial 복귀. 씨앗 홈 카드②③④+BS_TUTORIAL_HUB의 BTN_SEED_TRY data-link을 시트로 재배선(구 SCR_RECONTACT_INTRO/CALENDAR_ADD/TASK_LIST 전체화면 폐지). **녹음(①)만 전체화면 유지**(마이크·파형 필요). **재사용 화면(CALENDAR_ADD·TASK_LIST·RECONTACT_INTRO)은 미변경**(다른 탭 맥락). build_prototype EXTRA에 3종 등록 필수. 게이트 163키·미커버0·눈검증 3종 PASS. [[project_cnote_palette_violet_gold]] [[project_cnote_v08_design_batch]]
+**★씨앗 홈 튜토리얼=큰 바텀시트 흐름(v0.9.6·2midfi_03)** — 튜토리얼을 전체화면 이동 대신 큰 바텀시트 팝업으로. **신규 3종**(bs-dimmed min-height:84vh·flex column·하단 CTA 고정): BS_TUTORIAL_CONTACT(연락처·미니 프리뷰)·BS_TUTORIAL_SCHEDULE(일정·간이폼)·BS_TUTORIAL_TASK(할일·간이폼). 각 BTN_TUTORIAL_DONE/LATER/CLOSE→SCR_HOME|seed-partial 복귀. 씨앗 홈 카드②③④+BS_TUTORIAL_HUB의 BTN_SEED_TRY data-link을 시트로 재배선(구 SCR_RECONTACT_INTRO/CALENDAR_ADD/TASK_LIST 전체화면 폐지). **녹음(①)만 전체화면 유지**(마이크·파형 필요). **재사용 화면(CALENDAR_ADD·TASK_LIST·RECONTACT_INTRO)은 미변경**(다른 탭 맥락). build_prototype EXTRA에 3종 등록 필수. 게이트 163키·미커버0·눈검증 3종 PASS.
+
+**★다화면 개선 배치(v0.9.7)** — #5 씨앗홈 이름 큰 줄(SEED_INTRO SI_NAME 28px). #10 일정추가 유형순서 행사모임·미팅·개인(모임→행사모임)·취소삭제(이탈=헤더←). #11 일정상세 녹음시작 삭제. #13 인물상세 미팅기록추가 삭제. #14 인맥목록 +인맥추가 fill·인물상세 즐겨찾기★(프로필헤더 우상단·골드)·내 메모 카드(CARD_PERSON_MEMO 관계요약 아래). #15 마이 내명함보기→📤명함 보내기(BTN_SHARE_MY_CARD·디바이스 공유·화면없음)·프로필편집 내명함 관리카드(AREA_MY_CARD_MANAGE 프리뷰+크게보기+재촬영). #16 ★보관함 프로세스: [인맥으로 추가]→신규 SCR_CONTACT_ARCHIVE|detail(프리필 상세확인)→[인맥에 추가하기 BTN_ARCHIVE_CONFIRM_ADD]→보관함 복귀(즉시추가 폐지·큐 연속처리). #18 할일 empty 세그먼트 숨김·주CTA=＋할일 직접추가(fill)·미팅정리=보조링크. **★튜토리얼 BS_TUTORIAL_CONTACT→BS_TUTORIAL_CARD**(인맥 명함 등록): [인맥 명함 등록하기]→SCR_CARD_SCAN→CARD_RESULT|person→[등록하기]→SCR_PERSON(종료). 씨앗홈·허브 카드 라벨 갱신. build_prototype EXTRA CONTACT→CARD. 게이트 164키·미커버0·눈검증 PASS. ★#16은 ADD_FORM 재사용 대신 archive|detail 자기완결 상태로(ADD_FORM 6곳 진입 복귀 충돌 회피). [[project_cnote_palette_violet_gold]] [[project_cnote_v08_design_batch]]

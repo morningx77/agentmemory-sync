@@ -9,8 +9,7 @@ $env:PYTHONUTF8 = "1"
 python "$repo\_install_hook.py"
 
 Write-Host "[2/2] Task Scheduler 30분 간격 등록..."
-$act  = New-ScheduledTaskAction -Execute "powershell.exe" `
-        -Argument "-NoProfile -ExecutionPolicy Bypass -File `"$repo\sync-push.ps1`""
+$act  = New-ScheduledTaskAction -Execute "wscript.exe" -Argument "`"$repo\run-hidden.vbs`""
 $base = New-ScheduledTaskTrigger -Once -At (Get-Date)
 $rep  = New-ScheduledTaskTrigger -Once -At (Get-Date) -RepetitionInterval (New-TimeSpan -Minutes 30)
 $base.Repetition = $rep.Repetition
