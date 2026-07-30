@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 1763df05-ea22-4314-8d21-41768b3621ee
-  modified: 2026-07-30T10:11:18.921Z
+  modified: 2026-07-30T10:50:56.879Z
 ---
 
 ★260730 CNOTE(TieMing) 온보딩 씨앗홈 튜토리얼(명함/일정/할일)의 flow.html 시트 흐름 최종형. 많은 이터레이션 끝의 정본이니 다음 세션은 이 구조를 유지하고 임의로 되돌리지 말 것. 관련 [[project_cnote_v06_onboarding_jit]] [[reference_cnote_flow_player]].
@@ -19,7 +19,7 @@ metadata:
 1. **payoff는 시트 안에서 마무리**(페이지 탈출 아님). 결과 화면을 시트에 렌더 후 닫으면 씨앗홈 복귀.
 2. **passthrough 미사용** — 모두 일반 바텀시트(핸들·딤·씨앗홈 뒤로 비침)로 보여야 함. flow.html openSheet/sheetRender에서 `passthrough` 항상 제거. (isPass 함수는 미사용 잔재.)
 3. **시트=내용만(embedded)** — 전체 앱 화면(상단 헤더+하단 탭바+FAB)을 시트에 넣으면 ①폼 시 목록 딸려옴 ②시트 안 탭바/헤더 링크로 흐름 꼬임. → flow.html이 시트 렌더 시 `&args=embedded:!true` 주입(storyUrl 2번째 인자). **탭바·FAB 가진 화면은 TaskList 하나뿐**이라 TaskList에만 `embedded` prop 구현: initialSheet(폼)=`할 일 추가 폼만`(목록 없이 taskForm 조기 return), tutorial(결과)=목록 내용만(HubHeader·BottomNavigation·FAB 숨김). Calendar/Person/Card*는 탭바 없어 추가 작업 불필요.
-4. **결과 하단 CTA = [홈으로 고스트 | 닫기 primary]** (Person·Calendar상세·TaskList). 홈으로=`BTN_TUTORIAL_HOME`→`{page:'SCR_HOME|seed-partial-{card|calendar|task}}'`(성장한 씨앗홈=완료 가이드 카드). 닫기=`BTN_TUTORIAL_BACK`→`{page:'BS_TUTORIAL_HUB'}`(직전 튜토리얼 허브 복귀·다음 이어가기). NoteResult(녹음)는 페이지 기반이라 [홈으로|저장하기] 유지.
+4. **결과 하단 CTA = 닫기(primary) 단독**(Person·Calendar상세·TaskList). 닫기=`BTN_TUTORIAL_BACK`→`{page:'BS_TUTORIAL_HUB'}`(직전 튜토리얼 허브 복귀·다음 이어가기). ★260730 사용자 지시로 **홈으로 버튼 삭제**(House import도 제거). flow.html의 `BTN_TUTORIAL_HOME` SHEET_ROUTE·nav_map 항목은 dead지만 무해(잔존). NoteResult(녹음)는 페이지 기반이라 [홈으로|저장하기] 유지(시트 아님). 완료 가이드 카드(seed-partial justCompleted)는 기능 유지되나 이 결과에서 직접 진입점은 없어짐.
 
 **완료 가이드 카드**: seed-partial 홈 진행바 위, `justCompleted` prop→DONE_GUIDE 카피(방금 완료 리마인드+이득). 즉시 실데이터 없어도 payoff 보장. Home stories: page-scr-home--seed-partial-done-{recording|card|calendar|task}, _screen_links·_nav_map 등록됨.
 
