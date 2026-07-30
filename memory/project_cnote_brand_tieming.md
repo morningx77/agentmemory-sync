@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26da2990-5736-4b13-9636-9d5ffad0098d
-  modified: 2026-07-30T03:38:52.673Z
+  modified: 2026-07-30T04:25:16.264Z
 ---
 
 ★260730 CNOTE 앱의 **서비스명 = Tieming** 확정(사용자). 'tie'(인맥 연결) + 대화 기반. **★일괄 리네임 실행**: screen_design_v2 전 설계 소스(2midfi_*·docs·flow.html·link.html·scripts·data/*.json)에서 **대문자 'CNOTE'→'Tieming'** 치환(115건). **★소문자 'cnote' 인프라는 보존**(Firestore `cnote-64d56`·git repo `cnote-front`·폴더 `260610_C-Level_note`·배포경로) — 대문자만 치환해 자동 분리. CLAUDE.md·memory·01_docs(내부 repo 문서)는 미치환(내부명은 CNOTE 유지 가능·필요시 별도). **태그라인 = "대화 기반 인맥관리 서비스"**. (CNOTE=내부/repo 명, Tieming=대외 서비스명.)
@@ -18,4 +18,6 @@ metadata:
 
 **★녹음 가이드 이관(v0.9.4)** — 튜토리얼 바텀시트 대본을 외우기 어려움 → 녹음 화면에서 읽으며 녹음. **신규 SCR_RECORDING|coached**(온보딩 첫 녹음 전용·2midfi_02): 무음 안내(HINT_RECORD_LIMIT) 자리에 예시 대본 크게(GUIDE_SCRIPT 22px·3색 하이라이트 김대표님/다음 주 수요일/제안서), 무음60초·30분은 작게 강등. 일반 녹음(normal)엔 미노출. **BS_RECORDING_COACH 전환**: 큰 대본 제거→'녹음 화면의 문장을 따라 읽어보세요' 안내+칩 유지. nav BS_RECORDING_COACH|BTN_COACH_START_REC→SCR_RECORDING|coached(coached 버튼은 기존 SCR_RECORDING|BTN_* 재사용). ★사용자 방침=가이드는 **온보딩에서만**. 게이트 163키·미커버0·눈검증 PASS.
 
-**★AI 정리 결과 화면 9건 개선(v0.9.5·SCR_NOTE_RESULT|normal·2midfi_02)** — ①중복 배너(BANNER_CONTEXT_STAGE) 제거 ②'AI 정리 요약'→'요약' ③할일 체크박스 제거 ④요약 제목(SUMMARY_TITLE) 추가 ⑤할일 일정유도 칩(CHIP_TASK_DATE·미설정=점선 CHIP_ADD_TASK_DATE) ⑥'일정 후보'→'다음 일정 예약' ⑦일정 추가 버튼(BTN_ADD_SCHEDULE) ⑧할일 인물유도 칩(CHIP_TASK_PERSON·미연결=점선) ⑨하단 인물 연결하기(BTN_LINK_PERSON) 삭제→요약 섹션 인물 자동연결(AREA_LINKED_PERSON·수정·＋인물추가). ★personal 상태는 수동 인물연결 버튼 유지. SUMMARY_EDIT_MODE 기본 접힘 정리. 칩=점선(유도)/솔리드(설정) 2종. 게이트 163키·미커버0·눈검증 PASS. [[project_cnote_palette_violet_gold]] [[project_cnote_v08_design_batch]]
+**★AI 정리 결과 화면 9건 개선(v0.9.5·SCR_NOTE_RESULT|normal·2midfi_02)** — ①중복 배너(BANNER_CONTEXT_STAGE) 제거 ②'AI 정리 요약'→'요약' ③할일 체크박스 제거 ④요약 제목(SUMMARY_TITLE) 추가 ⑤할일 일정유도 칩(CHIP_TASK_DATE·미설정=점선 CHIP_ADD_TASK_DATE) ⑥'일정 후보'→'다음 일정 예약' ⑦일정 추가 버튼(BTN_ADD_SCHEDULE) ⑧할일 인물유도 칩(CHIP_TASK_PERSON·미연결=점선) ⑨하단 인물 연결하기(BTN_LINK_PERSON) 삭제→요약 섹션 인물 자동연결(AREA_LINKED_PERSON·수정·＋인물추가). ★personal 상태는 수동 인물연결 버튼 유지. SUMMARY_EDIT_MODE 기본 접힘 정리. 칩=점선(유도)/솔리드(설정) 2종. 게이트 163키·미커버0·눈검증 PASS.
+
+**★씨앗 홈 튜토리얼=큰 바텀시트 흐름(v0.9.6·2midfi_03)** — 튜토리얼을 전체화면 이동 대신 큰 바텀시트 팝업으로. **신규 3종**(bs-dimmed min-height:84vh·flex column·하단 CTA 고정): BS_TUTORIAL_CONTACT(연락처·미니 프리뷰)·BS_TUTORIAL_SCHEDULE(일정·간이폼)·BS_TUTORIAL_TASK(할일·간이폼). 각 BTN_TUTORIAL_DONE/LATER/CLOSE→SCR_HOME|seed-partial 복귀. 씨앗 홈 카드②③④+BS_TUTORIAL_HUB의 BTN_SEED_TRY data-link을 시트로 재배선(구 SCR_RECONTACT_INTRO/CALENDAR_ADD/TASK_LIST 전체화면 폐지). **녹음(①)만 전체화면 유지**(마이크·파형 필요). **재사용 화면(CALENDAR_ADD·TASK_LIST·RECONTACT_INTRO)은 미변경**(다른 탭 맥락). build_prototype EXTRA에 3종 등록 필수. 게이트 163키·미커버0·눈검증 3종 PASS. [[project_cnote_palette_violet_gold]] [[project_cnote_v08_design_batch]]
