@@ -15,6 +15,7 @@
 - [DEEPNAUT 확장 글쓰기 삽입](project_deepnaut_editor_injector.md) — ★260723 claude.ai 자동생성→네이버 원클릭삽입. chrome.debugger 신뢰입력·blob Ctrl+V. v1.6.0 홍기자개선. ★wrangler deploy가 대시보드 vars삭제→키는 secret
 - [DEEPNAUT 네이버 자동로그인 확장](project_deepnaut_naver_login_ext.md) — ★260722 별칭 딥노트. 버그=패스키버튼 오클릭→정확히"로그인"선택(v1.1.1). 정답=수동1회 세션유지
 - [NativeWind Animated.View className 함정](reference_nativewind_animated_classname.md) — ★className 무시됨. Animated.View엔 style만·시각스타일은 내부 View className
+- [THEMONY GSC 색인 실측법](reference_themony_gsc_measurement.md) — ★260801 라이브 실측. SA=google-blog-check(MATO credentials.json)·sc-domain·URL은 원문UTF-8+슬래시로 조회(퍼센트인코딩 넣으면 전부 unknown 오판). 실측=리라이트 재크롤0/30·숨김49색인잔존→검토요청 아직NO. 강제색인 API불가, 사이트맵재제출만
 - [THEMONY AdSense 니치집중·숨김·소수정예](project_themony_adsense_niche_focus.md) — ★260731 소수정예 완료: 공개108→57(전부 최필립개선·미개선0)·초지역정부지원43+연금중복8 숨김·리라이트30(설계Opus+Sonnet팬아웃+스크립트검증). SPC=fallback_cache FTP리네임. 4~8주뒤 AdSense검토요청
 - [협업 저널 자동감지 A훅](reference_journal_notify_hook.md) — ★journal-notify.mjs+UserPromptSubmit. 세션별커서·cwd역할판정. 신규저널 다음입력시 주입
 - [CNOTE 명함 일괄등록/내보내기+테마](project_cnote_card_import_theme.md) — ★260720 신규3화면(CARD_IMPORT·EXPORT·BS_THEME_PICK). 리멤버 13열·30일
