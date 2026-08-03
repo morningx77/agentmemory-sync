@@ -1,9 +1,12 @@
 # Memory Index
 
+- [빈상태 히어로=원 언어 재해석](project_cnote_empty_circle_language.md) — ★260803 empty 8종 구상아이콘 폐기→원(Circle) 시각언어(㉒-ⓐ). HeroIllust EmptyMark 8종(동심pulse/수직시리즈/수렴/그리드/동심포함/방사72°/단일동심/대각). 공통셸 EmptyMarkShell(glow+무대링r58op.32)·내부 절제·링여백. 시안=Artifact승인
+- [디자인=전체시스템·원점(단편수정 금지)](feedback_design_holistic_not_piecemeal.md) — ★지적부분만 국소반영하면 매수정이 새결함(클립보드→배터리). 정본원칙 로드→전체 한 시스템 설계→시안승인→일괄. brainstorming 스킬로 방향먼저. 로컬SVG 사전검증
 - [CNOTE 튜토리얼 시트 흐름 정본](project_cnote_tutorial_sheet_flow.md) — ★260730 씨앗홈 튜토리얼(명함/일정/할일) flow.html 최종. payoff=시트안마무리·passthrough제거·시트=내용만(TaskList embedded, 탭바있는건 얘뿐)·하단[홈으로|닫기(→허브)]·시트배경 whitenSheet로 흰색·완료가이드카드
 
 - [회사↔집 agentmemory 동기화(방식1)](project_agentmemory_sync_cross_pc.md) — ★260729. GitHub 비공개 repo 경유(export JSON 집에서 직접읽기)+SessionEnd훅+30분스케줄러. .claude쓰기·git push는 auto필터 차단→로컬실행
 - [서비스명 Tieming·스플래시](project_cnote_brand_tieming.md) — ★260730 CNOTE 대외명=Tieming. SCR_SPLASH 신설(바이올렛·5노드·골드). v0.9.0. ★v0.9.2 온보딩 재설계(신규 SCR_SIGNUP_EMAIL 이메일+이름 통합·NAME_QUICK 삭제·소셜 WELCOME직행·나중에하기)
+- [MVP2 착수 IA점검](project_cnote_mvp2_ia_audit.md) — ★260803 1차 실측 SCR66·상태135·정합100%. ★갭=비서위임/통제 7화면 flows 미연결·기획v2.1 MVP표 2버전 모순·IA엑셀36 미현행화·IBMS2 문서밖. 결정필요=비서위임 1차vs2차. 리포트 01_docs/검토_분석/_MVP2_착수_IA점검_260803
 - [메뉴 순서 정본=flows.json](reference_cnote_menu_order_ssot.md) — ★260730 프로토타입·flow.html·스토리북 메뉴순서를 flows.json flows[] 하나로 정본화(유틸리티 뒤로). export_menu_order→_menu_order.json(스토리북 계약)·build_flow_nav 꼬리덤프 수정·check-menu-order 게이트. 스토리북 불일치 23건 저널 전달
 - [Tieming BI·앱아이콘 방향](project_tieming_bi.md) — ★260729 BI=Tieming(Tie+Timing). 심볼=워드마크 m 파동/펄스, 오른쪽 정점만 골드. 다크 스퀘어클 앱아이콘
 - [CNOTE v0.8.0 설계변경 4건](project_cnote_v08_design_batch.md) — ★260728 일정등록 재구성·녹음알림 이관·캘린더→일정·홈카드2·관계카드. v0.8.4 캘린더필터·마이 재편. v0.8.5 디지털명함카드+SCR_PROFILE_EDIT
