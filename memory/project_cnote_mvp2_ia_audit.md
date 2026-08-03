@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26da2990-5736-4b13-9636-9d5ffad0098d
-  modified: 2026-08-03T01:08:41.471Z
+  modified: 2026-08-03T01:20:41.328Z
 ---
 
 ★260803 CNOTE(TieMing) 1차 MVP(flow.html 연결 화면) 개발완료 → MVP2 착수 전 IA 점검. 정본 리포트=`01_docs/검토_분석/_MVP2_착수_IA점검_260803.md`.
@@ -21,5 +21,7 @@ metadata:
 **MVP2 후보(기획 §10.3)**: 1.5/2차=관심신호·기회알림·AI연락제안·대화형AI비서(3계층)·태블릿브리핑보드·관계도시각화·잠자는인맥·예약자동대행. 별도개발트랙=알림 dynamic19종 AI생성(정적→데이터구동)·relationTier 산출로직(3개월2회룰·배지UI만 반영).
 
 **★결정(260803 사용자)**: **비서위임(delegate)·통제(control)=2차 확정**. 화면 7종 이미 설계완료·1차 flow 미배선=의도된 것(2차에서 함께 정돈). G1은 갭 아니라 2차 백로그 이관항목으로 재분류. 기획 신판(8721 1차포함) 표기 무효. 미결=②IBMS2 공식편입 명문화 ③MVP2 우선순위=기획§10.3 표 채택 권장.
+
+**★MVP2 경계 확정(260803)**: MVP2 = 비서위임·통제·보호 정돈 + 금주개선(명함공유·브리핑대상선택UX·가독성·BI) + **1.5차 승격(관심신호·기회알림·AI연락제안)**. 후행(MVP2 이후)=**3차+만**(대화형AI비서·태블릿·관계도·잠자는인맥·자동대행). 실행계획 정본=`01_docs/계획_핸드오프/_WORK_PLAN_MVP2_260803.md`. 순서=A금주→B정비→C비서/통제. 착수=Phase A-1 명함공유.
 
 **착수전 정비**: 1)delegate/control flows 연결(1차 확정시) 2)기획 구판 MVP표 아카이브·신판 단일화 3)IA엑셀 현행화 or 정본 재선언(flows.json+mid-fi) 4)control 진입경로 5)dynamic알림/relationTier=개발트랙 분리. 주간보고 차주=TieMing BI고도화·명함공유 신설·브리핑대상 선택UX·가독성·앱테스트 검증. [[project_cnote_brand_tieming]] [[reference_cnote_menu_order_ssot]]
