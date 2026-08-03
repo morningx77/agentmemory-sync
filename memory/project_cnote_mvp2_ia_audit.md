@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26da2990-5736-4b13-9636-9d5ffad0098d
-  modified: 2026-08-03T03:35:09.595Z
+  modified: 2026-08-03T03:46:51.406Z
 ---
 
 ★260803 CNOTE(TieMing) 1차 MVP(flow.html 연결 화면) 개발완료 → MVP2 착수 전 IA 점검. 정본 리포트=`01_docs/검토_분석/_MVP2_착수_IA점검_260803.md`.
@@ -25,5 +25,7 @@ metadata:
 **★MVP2 경계 확정(260803)**: MVP2 = 비서위임·통제·보호 정돈 + 금주개선(명함공유·브리핑대상선택UX·가독성·BI) + **1.5차 승격(관심신호·기회알림·AI연락제안)**. 후행(MVP2 이후)=**3차+만**(대화형AI비서·태블릿·관계도·잠자는인맥·자동대행). 실행계획 정본=`01_docs/계획_핸드오프/_WORK_PLAN_MVP2_260803.md`. 순서=A금주→B정비→C비서/통제. 착수=Phase A-1 명함공유.
 
 **★동료 공유·위임 통합 모델(MVP2 신규·260803 확정)** — 정본=`01_docs/기획/동료_공유위임_모델_정의서_v0.1_260803.md`. 명제="비서=크게 위임받은 특수 동료". 비서위임(수직)+일반동료(수평 peer)를 1모델로 통합. 확정 권장안: D1 동료(Member·내부)↔인맥(Person·외부) **별도 축** · D2 권한 **2층**(역할 상시 프리셋+사안 단위 할일/일정/노트 공유·위임·전달) · D3 A-1 명함공유 동료 수신자=Share 동작 연결(동료=앱내/외부=링크) · D4 계정=**단일 조직+멤버 초대+프리셋 2종**(비서/동료)·다중조직 후행 · D5 기존 06_delegate 7화면 재활용/신규는 설계단계. 감사(ACTIVITY_LOG)·승인게이트·잠금인물 계승. MVP2 워크플랜 C1로 반영.
+
+**★MVP2 A-1 명함 공유하기(v0.11.0·260803 완료)** — BTN_SHARE_MY_CARD→신규 BS_CARD_SHARE(4방식: 동료·링크·이미지·QR). 신규 SCR_CARD_SHARE_COLLEAGUE(동료 검색·조직멤버 선택·앱내 전달·초대)=**동료 모델 D3 Share 첫 화면**. 신규 SCR_CARD_SHARED(받은 명함 수신뷰·인맥추가). 신규 BS_CARD_QR. 게이트 168키·미커버0·눈검증 PASS. 저널로 스토리북2 story 요청. ★다음=Phase A-2(브리핑 대상 선택 UX 재설계).
 
 **착수전 정비**: 1)delegate/control flows 연결(1차 확정시) 2)기획 구판 MVP표 아카이브·신판 단일화 3)IA엑셀 현행화 or 정본 재선언(flows.json+mid-fi) 4)control 진입경로 5)dynamic알림/relationTier=개발트랙 분리. 주간보고 차주=TieMing BI고도화·명함공유 신설·브리핑대상 선택UX·가독성·앱테스트 검증. [[project_cnote_brand_tieming]] [[reference_cnote_menu_order_ssot]]
