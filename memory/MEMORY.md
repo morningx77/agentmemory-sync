@@ -1,5 +1,6 @@
 # Memory Index
 
+- [스토리북 Component/Module 위계+게이트](reference_storybook_hierarchy_gate.md) — ★260803 형제조합=Module/·원시=Component/(title 접두사). 재분류 Comp56/Mod25/Page50. check-hierarchy.mjs 게이트(gate편입·FAIL차단)·ATOM/MODULE_ALLOWLIST. ★함정=flow참조 story id(TutorialSheet/ProfileMethodSheet)는 title만 Module/·id=component-* 보존
 - [빈상태 히어로=원 언어 재해석](project_cnote_empty_circle_language.md) — ★260803 empty 8종 구상아이콘 폐기→원(Circle) 시각언어(㉒-ⓐ). HeroIllust EmptyMark 8종(동심pulse/수직시리즈/수렴/그리드/동심포함/방사72°/단일동심/대각). 공통셸 EmptyMarkShell(glow+무대링r58op.32)·내부 절제·링여백. 시안=Artifact승인
 - [디자인=전체시스템·원점(단편수정 금지)](feedback_design_holistic_not_piecemeal.md) — ★지적부분만 국소반영하면 매수정이 새결함(클립보드→배터리). 정본원칙 로드→전체 한 시스템 설계→시안승인→일괄. brainstorming 스킬로 방향먼저. 로컬SVG 사전검증
 - [CNOTE 튜토리얼 시트 흐름 정본](project_cnote_tutorial_sheet_flow.md) — ★260730 씨앗홈 튜토리얼(명함/일정/할일) flow.html 최종. payoff=시트안마무리·passthrough제거·시트=내용만(TaskList embedded, 탭바있는건 얘뿐)·하단[홈으로|닫기(→허브)]·시트배경 whitenSheet로 흰색·완료가이드카드
