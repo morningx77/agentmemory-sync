@@ -1,5 +1,7 @@
 # Memory Index
 
+- [브리핑 고정대상=즐겨찾기 재정의](project_cnote_pinned_briefing.md) — ★260803 v0.13.0 즐겨찾기★=‘챙기는 분’(고정 대상) 통합재정의. 인맥 이중구조(고정=통제↔quiet=AI발굴). SCR_HOME 신규 CARD_PINNED_UPDATES(4유형·상한3·fill없음·변화없으면숨김)+★의미전달(LABEL_PINNED_STATE·BS_PINNED_INTRO 1회안내). 개발=8시집계 4종스캔·직책자동감지는 후행
+
 - [스토리북 Component/Module 위계+게이트](reference_storybook_hierarchy_gate.md) — ★260803 형제조합=Module/·원시=Component/(title 접두사). 재분류 Comp56/Mod25/Page50. check-hierarchy.mjs 게이트(gate편입·FAIL차단)·ATOM/MODULE_ALLOWLIST. ★함정=flow참조 story id(TutorialSheet/ProfileMethodSheet)는 title만 Module/·id=component-* 보존
 - [빈상태 히어로=원 언어 재해석](project_cnote_empty_circle_language.md) — ★260803 empty 8종 구상아이콘 폐기→원(Circle) 시각언어(㉒-ⓐ). HeroIllust EmptyMark 8종(동심pulse/수직시리즈/수렴/그리드/동심포함/방사72°/단일동심/대각). 공통셸 EmptyMarkShell(glow+무대링r58op.32)·내부 절제·링여백. 시안=Artifact승인
 - [디자인=전체시스템·원점(단편수정 금지)](feedback_design_holistic_not_piecemeal.md) — ★지적부분만 국소반영하면 매수정이 새결함(클립보드→배터리). 정본원칙 로드→전체 한 시스템 설계→시안승인→일괄. brainstorming 스킬로 방향먼저. 로컬SVG 사전검증
