@@ -1,5 +1,8 @@
 # Memory Index
 
+- [AI 비서(대화형·3계층) 신설](project_cnote_ai_assistant.md) — ★260803 v0.15.0 MVP2. 기획 3계층 SCR_ASSISTANT 활성화. 앱데이터 그라운디드·조회+간단액션(승인게이트)·결과카드·단일대화·음성1급·새창. 신규 2midfi_13_assistant 4상태(empty 추천칩·normal 대화+카드·action-confirm 승인·listening 음성). flows ⑫ 그룹. ★진입점 미정(TBD)
+- [브리핑 고정대상=즐겨찾기 재정의](project_cnote_pinned_briefing.md) — ★260803 v0.13.0 즐겨찾기★=‘챙기는 분’(고정 대상) 통합재정의. 인맥 이중구조(고정=통제↔quiet=AI발굴). SCR_HOME 신규 CARD_PINNED_UPDATES(4유형·상한3·fill없음·변화없으면숨김)+★의미전달(LABEL_PINNED_STATE·BS_PINNED_INTRO 1회안내). 개발=8시집계 4종스캔·직책자동감지는 후행
+
 - [브리핑 고정대상=즐겨찾기 재정의](project_cnote_pinned_briefing.md) — ★260803 v0.13.0 즐겨찾기★=‘챙기는 분’(고정 대상) 통합재정의. 인맥 이중구조(고정=통제↔quiet=AI발굴). SCR_HOME 신규 CARD_PINNED_UPDATES(4유형·상한3·fill없음·변화없으면숨김)+★의미전달(LABEL_PINNED_STATE·BS_PINNED_INTRO 1회안내). 개발=8시집계 4종스캔·직책자동감지는 후행
 
 - [스토리북 Component/Module 위계+게이트](reference_storybook_hierarchy_gate.md) — ★260803 형제조합=Module/·원시=Component/(title 접두사). 재분류 Comp56/Mod25/Page50. check-hierarchy.mjs 게이트(gate편입·FAIL차단)·ATOM/MODULE_ALLOWLIST. ★함정=flow참조 story id(TutorialSheet/ProfileMethodSheet)는 title만 Module/·id=component-* 보존
