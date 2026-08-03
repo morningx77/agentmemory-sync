@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26da2990-5736-4b13-9636-9d5ffad0098d
-  modified: 2026-08-03T05:25:58.663Z
+  modified: 2026-08-03T06:00:22.326Z
 ---
 
 ★260803 CNOTE(TieMing) 1차 MVP(flow.html 연결 화면) 개발완료 → MVP2 착수 전 IA 점검. 정본 리포트=`01_docs/검토_분석/_MVP2_착수_IA점검_260803.md`.
@@ -28,6 +28,6 @@ metadata:
 
 **★MVP2 A-1 명함 공유하기(v0.11.0·260803 완료)** — BTN_SHARE_MY_CARD→신규 BS_CARD_SHARE(4방식: 동료·링크·이미지·QR). 신규 SCR_CARD_SHARE_COLLEAGUE(동료 검색·조직멤버 선택·앱내 전달·초대)=**동료 모델 D3 Share 첫 화면**. 신규 SCR_CARD_SHARED(받은 명함 수신뷰·인맥추가). 신규 BS_CARD_QR. 게이트 168키·미커버0·눈검증 PASS. 저널로 스토리북2 story 요청. ★다음=Phase A-2(브리핑 대상 선택 UX 재설계).
 
-**A-2 브리핑 대상 스위처(v0.11.1)**: SCR_MEETING_BRIEF 상단 참석자 인라인 칩 스위처(다수 참석 시 인물별 전환·1명 숨김). **A-1 확장 파일보관함(v0.11.2·handoff)**: 신규 SCR_MY_FILES(마이 하위)·BS_CARD_SHARE 📎파일 첨부·SCR_CARD_SHARED 받은 파일. **★A-3 가독성(진행중)**: 정본 기준=`01_docs/설계_명세/60대_Clevel_최적화_기준_v0.1_260803`(설계 단순화 S1~S6+디자인 가독성+C1~C8 폰트확대 연쇄+★S1 화면당 fill 정확히 1개). 진단=텍스트 53% ≤13px·과밀. 홈 파일럿 완성(data-stage=시안·SCR_HOME|a3pilot·핵심2+요약행+접기·fill1). 다음=NOTE_RESULT 파일럿→기준 v1.0 확정→확산. ★MVP2 인맥 IA 백로그=회사별 인맥 그룹 뷰(SCR_PERSON_LIST by-company).
+**A-2 브리핑 대상 스위처(v0.11.1)**: SCR_MEETING_BRIEF 상단 참석자 인라인 칩 스위처(다수 참석 시 인물별 전환·1명 숨김). **A-1 확장 파일보관함(v0.11.2·handoff)**: 신규 SCR_MY_FILES(마이 하위)·BS_CARD_SHARE 📎파일 첨부·SCR_CARD_SHARED 받은 파일. **★A-3 가독성(진행중)**: 정본 기준=`01_docs/설계_명세/60대_Clevel_최적화_기준_v0.1_260803`(설계 단순화 S1~S6+디자인 가독성+C1~C8 폰트확대 연쇄+★S1 화면당 fill 정확히 1개). 진단=텍스트 53% ≤13px·과밀. ★**기준 v1.0 확정(260803·v0.12.0)**: 화면당 fill 정확히 1개(S1)·≤13px 전면금지·본문16/제목22·폰트확대 연쇄 C1~C8. **홈·정리결과 normal 재설계 적용·배포**(파일럿 승격, 구 과밀 대체·SCR_HOME 핵심2+요약행+접기·NOTE_RESULT 3블록). 저널로 스토리북2 재구축 요청. **★확산 남음=인물상세·회사정보·캘린더 등 고밀도 화면 순차**(화면별 설계→연쇄→가독성, 맹목 codemod 금지). ★MVP2 인맥 IA 백로그=회사별 인맥 그룹 뷰(SCR_PERSON_LIST by-company).
 
 **착수전 정비**: 1)delegate/control flows 연결(1차 확정시) 2)기획 구판 MVP표 아카이브·신판 단일화 3)IA엑셀 현행화 or 정본 재선언(flows.json+mid-fi) 4)control 진입경로 5)dynamic알림/relationTier=개발트랙 분리. 주간보고 차주=TieMing BI고도화·명함공유 신설·브리핑대상 선택UX·가독성·앱테스트 검증. [[project_cnote_brand_tieming]] [[reference_cnote_menu_order_ssot]]
