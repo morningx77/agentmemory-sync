@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26da2990-5736-4b13-9636-9d5ffad0098d
-  modified: 2026-08-03T06:00:22.326Z
+  modified: 2026-08-03T09:12:42.751Z
 ---
 
 ★260803 CNOTE(TieMing) 1차 MVP(flow.html 연결 화면) 개발완료 → MVP2 착수 전 IA 점검. 정본 리포트=`01_docs/검토_분석/_MVP2_착수_IA점검_260803.md`.
@@ -26,7 +26,7 @@ metadata:
 
 **★동료 공유·위임 통합 모델(MVP2 신규·260803 확정)** — 정본=`01_docs/기획/동료_공유위임_모델_정의서_v0.1_260803.md`. 명제="비서=크게 위임받은 특수 동료". 비서위임(수직)+일반동료(수평 peer)를 1모델로 통합. 확정 권장안: D1 동료(Member·내부)↔인맥(Person·외부) **별도 축** · D2 권한 **2층**(역할 상시 프리셋+사안 단위 할일/일정/노트 공유·위임·전달) · D3 A-1 명함공유 동료 수신자=Share 동작 연결(동료=앱내/외부=링크) · D4 계정=**단일 조직+멤버 초대+프리셋 2종**(비서/동료)·다중조직 후행 · D5 기존 06_delegate 7화면 재활용/신규는 설계단계. 감사(ACTIVITY_LOG)·승인게이트·잠금인물 계승. MVP2 워크플랜 C1로 반영.
 
-**★MVP2 A-1 명함 공유하기(v0.11.0·260803 완료)** — BTN_SHARE_MY_CARD→신규 BS_CARD_SHARE(4방식: 동료·링크·이미지·QR). 신규 SCR_CARD_SHARE_COLLEAGUE(동료 검색·조직멤버 선택·앱내 전달·초대)=**동료 모델 D3 Share 첫 화면**. 신규 SCR_CARD_SHARED(받은 명함 수신뷰·인맥추가). 신규 BS_CARD_QR. 게이트 168키·미커버0·눈검증 PASS. 저널로 스토리북2 story 요청. ★다음=Phase A-2(브리핑 대상 선택 UX 재설계).
+**★MVP2 A-1 명함 공유하기(v0.11.0·260803 완료)** — BTN_SHARE_MY_CARD→신규 BS_CARD_SHARE(4방식: 동료·링크·이미지·QR). 신규 SCR_CARD_SHARE_COLLEAGUE(동료 검색·조직멤버 선택·앱내 전달·초대)=**동료 모델 D3 Share 첫 화면**. 신규 SCR_CARD_SHARED(받은 명함 수신뷰·인맥추가). 신규 BS_CARD_QR. 게이트 168키·미커버0·눈검증 PASS. 저널로 스토리북2 story 요청. **★A-1 확장2(v0.14.0·260803 스토리북2 요청)**: 명함 공유 대상=디지털 명함+실물 명함(내 스캔 원본) 2종. BS_CARD_SHARE 상단 [디지털|실물] 세그먼트+🔍크게보기. 신규 SCR_CARD_PREVIEW 2상태(normal 디지털·real 실물사진·세그먼트 전환·fill=공유하기). 폐기 BTN_VIEW_MY_CARD_LARGE 대체. 마이 '내명함 크게보기'→SCR_CARD_PREVIEW 재지정. 173키·미커버0·눈검증 PASS.
 
 **A-2 브리핑 대상 스위처(v0.11.1)**: SCR_MEETING_BRIEF 상단 참석자 인라인 칩 스위처(다수 참석 시 인물별 전환·1명 숨김). **A-1 확장 파일보관함(v0.11.2·handoff)**: 신규 SCR_MY_FILES(마이 하위)·BS_CARD_SHARE 📎파일 첨부·SCR_CARD_SHARED 받은 파일. **★A-3 가독성(진행중)**: 정본 기준=`01_docs/설계_명세/60대_Clevel_최적화_기준_v0.1_260803`(설계 단순화 S1~S6+디자인 가독성+C1~C8 폰트확대 연쇄+★S1 화면당 fill 정확히 1개). 진단=텍스트 53% ≤13px·과밀. ★**기준 v1.0 확정(260803·v0.12.0)**: 화면당 fill 정확히 1개(S1)·≤13px 전면금지·본문16/제목22·폰트확대 연쇄 C1~C8. **홈·정리결과 normal 재설계 적용·배포**(파일럿 승격, 구 과밀 대체·SCR_HOME 핵심2+요약행+접기·NOTE_RESULT 3블록). 저널로 스토리북2 재구축 요청. **★확산 남음=인물상세·회사정보·캘린더 등 고밀도 화면 순차**(화면별 설계→연쇄→가독성, 맹목 codemod 금지). ★MVP2 인맥 IA 백로그=회사별 인맥 그룹 뷰(SCR_PERSON_LIST by-company).
 
