@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 9c0b9b86-936a-4d31-9f94-e1910d50c034
-  modified: 2026-07-29T08:11:57.444Z
+  modified: 2026-08-04T00:22:53.657Z
 ---
 
 ★260729 크리에이티브 세션. CNOTE 앱의 **BI 네이밍 "Tieming" 확정**(사용자 승인).
@@ -17,8 +17,10 @@ metadata:
 - **산출물**(전부 `03_projects/260610_C-Level_note/02_design/`):
   - `_APP_ICON_BI_기반브리프_260729.md` (제품·타깃·팔레트 근거)
   - `_Tieming_BI_아티팩트_생성_프롬프트_260729.md` (재생성용 프롬프트)
-  - `tieming_bi_board.html` (BI 보드: 워드마크·심볼·아이콘·사다리·파동4변주·시스템)
+  - `tieming_bi_board.html` = **시안 A · 파동 펄스**(바이올렛+골드, executive) → artifact `ac0dbe4a-2794-4be1-924d-607f4e5f6037`
+  - `tieming_bi_board_spectrum.html` = **시안 B · 스펙트럼 막대**(6색 무지개 이퀄라이저, 활기·대중적, 참조이미지 기반) → artifact `1b4d1efa-7995-4173-9b1f-34eea4e08c61`
   - Figma CDS 페이지 "BI"(node 2486:872)엔 발산 습작들(원/파셋/힘있는3안)이 남아있음.
-- **아티팩트 URL**: https://claude.ai/code/artifact/ac0dbe4a-2794-4be1-924d-607f4e5f6037 (재게시=같은 file_path).
+- **아티팩트 URL**: A=https://claude.ai/code/artifact/ac0dbe4a-2794-4be1-924d-607f4e5f6037 · B=https://claude.ai/code/artifact/1b4d1efa-7995-4173-9b1f-34eea4e08c61 (재게시=같은 file_path).
 - **함정/노하우**: (1)use_figma 벡터는 vectorPaths 세팅 시 bbox를 (0,0) 정규화→노드 x/y를 **점들의 min으로** 세팅해야 제자리. 기존 벡터 path 교체 시도 금지(위치 틀어짐)→**새로 생성**. (2)아티팩트 눈검증=로컬 chrome-headless-shell(`$LOCALAPPDATA/ms-playwright/chromium_headless_shell-*/`)로 `--screenshot --force-prefers-reduced-motion --virtual-time-budget` 캡처 가능(npm playwright 없이).
-- **미결**: "Tieming"이 CNOTE **전체 정식 리네이밍**인지 사용자 확인 대기(현재 BI/아이콘에만 반영, 문서·CLAUDE.md 전면 개명 보류).
+- **미결/다음(★260804 세션종료·마이그레이션 완료 후 재개)**: ⓐ **시안 A vs B 정본 결정**(소견: C레벨 포지션엔 A 정합, B는 컬러 거버넌스 이탈) ⓑ 절충안 C(막대형+바이올렛·골드 2색 듀오톤) 제작 옵션 ⓒ 선택안 디테일 튜닝 ⓓ Figma "BI" 페이지 벡터 이관 ⓔ "Tieming"이 CNOTE **전체 정식 리네이밍**인지 확인 대기(현재 BI/아이콘에만 반영·폴더명 `260610_C-Level_note` 유지).
+- **★경로 주의**: 회사/개인 분리 마이그레이션(=[[project_workspace_company_personal_split]]) 후 CNOTE는 **`ISPARK\03_projects\260610_C-Level_note\`**로 이동됨. 위 산출물·Figma 작업은 그 새 경로에서 재개. 전달사항=루트 `_MIGRATION_전달사항_크리에이티브세션_260804.md`.
