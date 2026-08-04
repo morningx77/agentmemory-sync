@@ -5,13 +5,13 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 65ee744c-c1c6-4520-901a-b07c503118b7
-  modified: 2026-08-01T10:21:58.536Z
+  modified: 2026-08-04T01:02:00.425Z
 ---
 
 THEMONY(themony.com) 구글 색인상태를 코드로 실측하는 방법 (260801 확립). AdSense 검토요청 타이밍을 "날짜 아닌 데이터"로 판정하기 위함.
 
 ## 접속 (재사용 서비스계정)
-- 키 = `03_projects/260608_MATO/_internal/credentials.json` (SA `google-blog-check@gen-lang-client-0821571318.iam.gserviceaccount.com`). **Search Console API 이미 활성화**됨. themony GSC 속성에 소유자로 추가 완료.
+- 키 = `IMGINE/03_projects/260608_MATO/_internal/credentials.json` (★260804-2 회사/개인 분리로 MATO가 IMGINE로 이동 — 구 경로 `03_projects/260608_MATO/...` 아님). SA `google-blog-check@gen-lang-client-0821571318.iam.gserviceaccount.com`. **Search Console API 이미 활성화**됨. themony GSC 속성에 소유자로 추가 완료.
 - 속성 = `sc-domain:themony.com` (도메인 속성). google-auth + requests, scope 읽기=`.../auth/webmasters.readonly`, 사이트맵제출=`.../auth/webmasters`.
 - 라이브러리 이미 설치됨(`import google.oauth2.service_account`).
 
