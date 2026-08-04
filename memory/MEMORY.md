@@ -1,5 +1,6 @@
 # Memory Index
 
+- [워크스페이스 회사/개인 분리(계획확정·실행대기)](project_workspace_company_personal_split.md) — ★260804 하위폴더안(ISPARK\·IMGINE\)+루트CLAUDE.md범용화. 회사=FIGMA/ISPARK_MCP/CNOTE+02_office/04_design/07_archive, 개인=forest/MATO/Chrome/THEMONY/TSMIN/DEEPNAUT/skills, 공용=000000_INFO/05_notes(A). 검증=CLAUDE.md만 상위상속(누수)·settings/MCP/메모리 격리. 다른세션 완료후 실행
 - [AI 비서(대화형·3계층) 신설](project_cnote_ai_assistant.md) — ★260803 v0.15.0 MVP2. 기획 3계층 SCR_ASSISTANT 활성화. 앱데이터 그라운디드·조회+간단액션(승인게이트)·결과카드·단일대화·음성1급·새창. 신규 2midfi_13_assistant 4상태(empty 추천칩·normal 대화+카드·action-confirm 승인·listening 음성). flows ⑫ 그룹. ★진입점 미정(TBD)
 - [브리핑 고정대상=즐겨찾기 재정의](project_cnote_pinned_briefing.md) — ★260803 v0.13.0 즐겨찾기★=‘챙기는 분’(고정 대상) 통합재정의. 인맥 이중구조(고정=통제↔quiet=AI발굴). SCR_HOME 신규 CARD_PINNED_UPDATES(4유형·상한3·fill없음·변화없으면숨김)+★의미전달(LABEL_PINNED_STATE·BS_PINNED_INTRO 1회안내). 개발=8시집계 4종스캔·직책자동감지는 후행
 
