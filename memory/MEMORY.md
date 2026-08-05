@@ -1,5 +1,7 @@
 # Memory Index
 
+- [CNOTE 마스터(Master) 역할](project_cnote_master_role.md) — ★260805 모든 작업 정문. 유형판정(6분류×20)·라우팅·게이트·자기개선루프(lesson_recall/save/reflect). 관제단일·실행안함(worker가 실행). 통신=맥락세션 저널핸드오프/결정론 직접. 거버넌스=수정 승인+변경이력. 산출=플레이북정본·master-router스킬·로스터·run_gates에 tsc편입. 루프는 DNA(1일차)
+
 - [CNOTE IA 정책+개선배치 G0~G7](project_cnote_ia_policy_g_batch.md) — ★260805 v0.17~0.20 완결. nav=1depth만+check-nav-policy 게이트·5탭 공통불변·AI비서=헤더🤖 상시/비서(사람)=마이 조건부·비서모드 순환(비서마이 신설)·헤더규격 🤖🔔+탭유틸1. G1 명함(랜딩 480중앙)·G2 녹음필·G3 🔔관리인맥 스위치·G4 위치기회(km+체류+쿨다운)·G5 이메일권한 오버스펙 제거·G6 delegate 정렬. 스토리북2 device 백로그 대량
 
 - [CNOTE 에이전트·스킬 확충 Phase1](project_cnote_agents_skills_확충.md) — ★260804 회사계정. 프레임워크=디스패치가능→에이전트·맥락필요→스킬·결정론→스크립트. 제작=rebuild_flow(/flow-wire·btnNav함정차단)·run_gates(/gate-check)·premium-craft·circle-visual-language·figma-quality-gate. ISPARK\.claude. Phase2 백로그有
