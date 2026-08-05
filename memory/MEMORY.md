@@ -1,5 +1,7 @@
 # Memory Index
 
+- [CNOTE IA 정책+개선배치 G0~G7](project_cnote_ia_policy_g_batch.md) — ★260805 v0.17~0.20 완결. nav=1depth만+check-nav-policy 게이트·5탭 공통불변·AI비서=헤더🤖 상시/비서(사람)=마이 조건부·비서모드 순환(비서마이 신설)·헤더규격 🤖🔔+탭유틸1. G1 명함(랜딩 480중앙)·G2 녹음필·G3 🔔관리인맥 스위치·G4 위치기회(km+체류+쿨다운)·G5 이메일권한 오버스펙 제거·G6 delegate 정렬. 스토리북2 device 백로그 대량
+
 - [CNOTE 에이전트·스킬 확충 Phase1](project_cnote_agents_skills_확충.md) — ★260804 회사계정. 프레임워크=디스패치가능→에이전트·맥락필요→스킬·결정론→스크립트. 제작=rebuild_flow(/flow-wire·btnNav함정차단)·run_gates(/gate-check)·premium-craft·circle-visual-language·figma-quality-gate. ISPARK\.claude. Phase2 백로그有
 
 - [워크스페이스 회사/개인 분리(★Phase1 실행완료)](project_workspace_company_personal_split.md) — ★260804 Phase1 완료: 회사 6항목→`ISPARK/` 이동(CNOTE 새 경로=`ISPARK/03_projects/260610_C-Level_note/`, storybook 검증통과·.cache 삭제필수). Phase2(개인 IMGINE/) 대기. 하위폴더안(ISPARK\·IMGINE\)+루트CLAUDE.md범용화. 회사=FIGMA/ISPARK_MCP/CNOTE+02_office/04_design/07_archive, 개인=forest/MATO/Chrome/THEMONY/TSMIN/DEEPNAUT/skills, 공용=000000_INFO/05_notes(A). 검증=CLAUDE.md만 상위상속(누수)·settings/MCP/메모리 격리. 다른세션 완료후 실행
