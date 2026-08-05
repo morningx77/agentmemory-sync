@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 26da2990-5736-4b13-9636-9d5ffad0098d
-  modified: 2026-08-03T09:57:55.460Z
+  modified: 2026-08-05T04:21:43.048Z
 ---
 
 ★260803 v0.15.0 [MVP2] **AI 비서(대화형·3계층)** 신설. 기획 3계층 IA의 상시 대화형 AI 비서(SCR_ASSISTANT_001)를 MVP2로 앞당겨 활성화(원래 1.5차/후행). 정본 설계=`01_docs/기획/AI비서_대화형_설계_v0.1_260803.md`.
@@ -21,7 +21,9 @@ metadata:
 
 **배선**: flows 신규 그룹 **⑫ AI 비서**(assistant·13번째 그룹). nav_map SCR_ASSISTANT|BTN_CLOSE→SCR_HOME(임시). deploy midfi files에 신규 파일 등록. 게이트 178키·13카테고리·미커버0·눈검증(4상태) PASS.
 
-**★진입점 미정**: 새 창 전제로 설계, **실제 진입 배선 TBD**(후보=홈 헤더·FAB 인접·하단 탭). 진입점 확정 후 별도 배선.
+**★진입점 확정(260805·IA 정책)**: 전 탭 헤더 우상단 **🤖 AI비서 상시 아이콘**(BTN_HEADER_ASSISTANT). 미정 해소.
+
+**★대화 모드(v0.21.0·260805·Gemini Live 참조)**: 입력바 제일 오른쪽 **〰️ BTN_LIVE_MODE**→**SCR_ASSISTANT|live**(5번째 상태). 자동 청취 루프 음성 연속 대화 — AI 음성 답변(🔊)+**모든 주고받음 채팅 버블 기록**(결과 카드 포함·종료 후 로그 유지). 하단 BAR_LIVE_CONTROL(파형+상태라벨+음소거+✕종료→normal). 🎙(listening·1회 입력)과 역할 구분. 개발=연속 STT/TTS·barge-in·무음 타임아웃.
 
 **개발 메모**: 데이터 그라운딩(조회 API)+STT(음성노트 파이프 재활용)+LLM(도메인 프롬프트). 환각 방지(근거 표기·모르면 모른다)·액션 항상 승인.
 
