@@ -1,5 +1,7 @@
 # Memory Index
 
+- [CNOTE IBMS2 연동명세 v1 정합 v0.24.0](project_cnote_ibms2_spec_v1.md) — ★260806 명세 htm=정본. no-opp 반전(막다른길→AI 신규영업건 동반생성)·CASE_DETAIL 신규(단계·이름만 수정)·인물상세 영업건 섹션 5상태+이력 병합·요약 5줄 형식·업체담당 고정. 함정=midfi bottomnav은 게이트 밖·예시 데이터 정합·both-sides 앵커 중복
+
 - [Claude 회사/개인 프로필 분리](reference_claude_profile_split_company_personal.md) — ★260806 검증성공. 로그인=Windows사용자당1개(~/.claude/.credentials.json)라 VS Code·Antigravity 공유됨 → **CLAUDE_CONFIG_DIR**로 분리(VS Code=회사 `_회사_VSCode_실행.cmd` / Antigravity=개인 기본). ★함정=VS Code 완전종료후 런처실행·.cmd는 ASCII전용(CP949)·통째복사 금지
 
 - [CNOTE 멀티 명함 N개 v0.23.1](project_cnote_multicard.md) — ★260806 구현완료. 상한5·기본1·삭제=링크 즉시만료·연락처 공통. 마이|cards 칩스위처+PROFILE_EDIT|multi/new(기본지정·삭제 흡수)+BS_CARD_DELETE_CONFIRM+공유시트 칩. ★v0.23.1 SCR_MY_CARDS 폐기(칩+✎와 중복). 함정=이름 nowrap·화면CTA는 인라인 보라(.btn.fill은 시트용)
