@@ -1,5 +1,7 @@
 # Memory Index
 
+- [Claude 회사/개인 프로필 분리](reference_claude_profile_split_company_personal.md) — ★260806 검증성공. 로그인=Windows사용자당1개(~/.claude/.credentials.json)라 VS Code·Antigravity 공유됨 → **CLAUDE_CONFIG_DIR**로 분리(VS Code=회사 `_회사_VSCode_실행.cmd` / Antigravity=개인 기본). ★함정=VS Code 완전종료후 런처실행·.cmd는 ASCII전용(CP949)·통째복사 금지
+
 - [CNOTE 멀티 명함 N개 v0.23.0](project_cnote_multicard.md) — ★260806 구현완료. 상한5·기본1·삭제=링크 즉시만료·연락처 공통. SCR_MY_CARDS+BS_CARD_DELETE_CONFIRM+마이|cards 칩스위처+PROFILE_EDIT|multi/new+공유시트 칩. 함정=이름 nowrap·화면CTA는 인라인 보라(.btn.fill은 시트용)
 
 - [CNOTE 마스터(Master) 역할](project_cnote_master_role.md) — ★260805 모든 작업 정문. 유형판정(6분류×20)·라우팅·게이트·자기개선루프(lesson_recall/save/reflect). 관제단일·실행안함(worker가 실행). 통신=맥락세션 저널핸드오프/결정론 직접. 거버넌스=수정 승인+변경이력. 산출=플레이북정본·master-router스킬·로스터·run_gates에 tsc편입. 루프는 DNA(1일차)
