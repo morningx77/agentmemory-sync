@@ -1,5 +1,7 @@
 # Memory Index
 
+- [CNOTE 람스 디자인철학 도입(초안)](project_cnote_rams_philosophy.md) — ★260808 크리에이티브. 디터 람스 10원칙을 CNOTE/Tieming 디자인철학으로 도입(정본초안). spine=람스 규율/signature=원언어+골드, 2층분리(코어 엄격/표현층 완화), #6정직=AI확신위조금지. 산출=_DESIGN_PHILOSOPHY_Rams적용_초안·SCR_HOME before/after(artifact b9d8badd). 미결(마스터결정)=게이트강제·정본편입형태. 거버넌스=마스터 검토대상
+
 - [CNOTE IBMS2 연동명세 v1 정합 v0.24.0](project_cnote_ibms2_spec_v1.md) — ★260806 명세 htm=정본. no-opp 반전(막다른길→AI 신규영업건 동반생성)·CASE_DETAIL 신규(단계·이름만 수정)·인물상세 영업건 섹션 5상태+이력 병합·요약 5줄 형식·업체담당 고정. 함정=midfi bottomnav은 게이트 밖·예시 데이터 정합·both-sides 앵커 중복
 
 - [Claude 회사/개인 프로필 분리](reference_claude_profile_split_company_personal.md) — ★260806 검증성공. 로그인=Windows사용자당1개(~/.claude/.credentials.json)라 VS Code·Antigravity 공유됨 → **CLAUDE_CONFIG_DIR**로 분리(VS Code=회사 `_회사_VSCode_실행.cmd` / Antigravity=개인 기본). ★함정=VS Code 완전종료후 런처실행·.cmd는 ASCII전용(CP949)·통째복사 금지
