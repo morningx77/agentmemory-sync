@@ -4,6 +4,8 @@
 
 - [CNOTE 체크리스트 v1.1 — 하류 대조](project_cnote_checklist_v11_downstream.md) — ★260810 A3-05 신설(판정규칙 확정 전 하류 화면 1:1 대조·게이트가 못 잡는 유형)+B1-05 확장(빈상태 이중의미 금지). 104→105. ⚠**§5-5 상계 1건 미이행** — 다음 분기 다이어트에서 1건 하향·폐기 필요
 
+- [git useHttpPath 전역 금지(회사 push 마비)](reference_git_credential_usehttppath_trap.md) — ★260810 실사고. 전역에 켜면 회사 repo가 host레벨 자격증명(git:https://github.com)과 매칭 실패→push 통째로 불가(재인증창도 안 뜨고 그냥 실패). 반드시 includeIf 하위 ~/.gitconfig-personal에만. 검증=양쪽 git ls-remote. 교훈=전역설정 변경은 동시 세션을 조용히 망가뜨림
+
 - [FP 세션(재무설계+파이썬자동화+풀스택) 프로젝트](project_fp_finance_automation.md) — ★260810 신설. 별칭 FP=3역 겸직. 폴더=IMGINE/03_projects/260810_FP(표준구조+01_docs 4분류+_INDEX). ★데이터원칙=로컬전용·git커밋금지·자격증명분리·가정라벨. 상태=셋업만 완료, 스택·첫스텝·데이터소스 미정(사용자 대기)
 
 - [컴팩트 재개=킥오프 밖 맥락은 추측금지·원본 실검색](feedback_post_compact_context_recall.md) — ★260810 킥오프/요약에 없는 파일·수치·이름을 건드리면 착수 전 원본 .jsonl Grep→_INDEX→메모리→질문 순 회수. 원본 트랜스크립트는 디스크 보존(요약 말미 경로). compact-prep §5 재개프로토콜+§4a 킥오프§0 템플릿에 명문화(2프로필). post_compact_verification(검증)의 짝=유실회수
