@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 65ee744c-c1c6-4520-901a-b07c503118b7
-  modified: 2026-08-04T01:02:00.425Z
+  modified: 2026-08-10T01:42:24.644Z
 ---
 
 THEMONY(themony.com) 구글 색인상태를 코드로 실측하는 방법 (260801 확립). AdSense 검토요청 타이밍을 "날짜 아닌 데이터"로 판정하기 위함.
@@ -14,6 +14,10 @@ THEMONY(themony.com) 구글 색인상태를 코드로 실측하는 방법 (26080
 - 키 = `IMGINE/03_projects/260608_MATO/_internal/credentials.json` (★260804-2 회사/개인 분리로 MATO가 IMGINE로 이동 — 구 경로 `03_projects/260608_MATO/...` 아님). SA `google-blog-check@gen-lang-client-0821571318.iam.gserviceaccount.com`. **Search Console API 이미 활성화**됨. themony GSC 속성에 소유자로 추가 완료.
 - 속성 = `sc-domain:themony.com` (도메인 속성). google-auth + requests, scope 읽기=`.../auth/webmasters.readonly`, 사이트맵제출=`.../auth/webmasters`.
 - 라이브러리 이미 설치됨(`import google.oauth2.service_account`).
+
+## ★★함정2: WordPress REST 읽기 캐시 (260810 실측)
+- 콘텐츠 POST(`/wp/v2/posts/{id}` content 수정)는 **정상 반영**(응답 본문에 변경 찍힘·modified 갱신)되는데, 직후 **재GET(`context=edit` content.raw)이 옛 값을 반환**한다. LiteSpeed 추정 REST 읽기 캐시로, **CF/SPC purge로도 안 지워짐**. → REST content.raw 재검증은 **오판**(예: 깨진링크 수정 후 "34 잔존"으로 오인). **검증은 반드시 렌더된 공개 페이지(또는 GSC)로 한다.** 메타 디스크립션도 렌더로 확인.
+- 메타 쓰기 = `/rankmath/v1/updateMeta`(POST, Basic auth, `{objectID,objectType:'post',meta:{rank_math_description,rank_math_focus_keyword}}`) — 코드/FTP 불필요. 렌더로 반영 확인됨.
 
 ## ★★함정: URL 인코딩 (안 지키면 전부 "unknown"으로 오판)
 - 구글은 한글 permalink를 **원문 UTF-8 + trailing slash** 형태로 색인함. `urlInspection.index.inspect`에 넣는 inspectionUrl도 **반드시 원문 UTF-8+슬래시**여야 매칭됨.
