@@ -1,5 +1,7 @@
 # Memory Index
 
+- [토큰 자가감시 범용 배치(개인·회사)](reference_context_selfmonitor_universal.md) — ★260810 compact-prep 스킬·context-guard 후크·context-pct 스크립트를 ~/.claude·~/.claude-company 양 유저레벨에 자립 미러(누수0). context-pct=CLAUDE_CONFIG_DIR 자동감지 범용화. 워크스페이스 후크는 이중발화 방지로 제거. 재시작 후 적용. 미검증=후크 병합규칙(1회 발화 확인 필요)
+
 - [컴팩션 후 재개 검증 절차(필수)](feedback_post_compact_verification.md) — ★260810 컴팩션 요약=기억. 재개 즉시 자동발동: 추측편집 금지(실파일 앵커)·전후 편집 전수 재검증(미치환 grep)·결과 보고·실파일이 정본. 루트 CLAUDE.md 등재. 실사고=태그스윕 미치환+병합행 중첩 오삽입
 
 - [CNOTE 람스 디자인철학 도입(초안)](project_cnote_rams_philosophy.md) — ★260808 크리에이티브. 디터 람스 10원칙을 CNOTE/Tieming 디자인철학으로 도입(정본초안). spine=람스 규율/signature=원언어+골드, 2층분리(코어 엄격/표현층 완화), #6정직=AI확신위조금지. 산출=_DESIGN_PHILOSOPHY_Rams적용_초안·SCR_HOME before/after(artifact b9d8badd). 미결(마스터결정)=게이트강제·정본편입형태. 거버넌스=마스터 검토대상
