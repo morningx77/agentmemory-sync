@@ -1,5 +1,9 @@
 # Memory Index
 
+- [FP 세션(재무설계+파이썬자동화+풀스택) 프로젝트](project_fp_finance_automation.md) — ★260810 신설. 별칭 FP=3역 겸직. 폴더=IMGINE/03_projects/260810_FP(표준구조+01_docs 4분류+_INDEX). ★데이터원칙=로컬전용·git커밋금지·자격증명분리·가정라벨. 상태=셋업만 완료, 스택·첫스텝·데이터소스 미정(사용자 대기)
+
+- [컴팩트 재개=킥오프 밖 맥락은 추측금지·원본 실검색](feedback_post_compact_context_recall.md) — ★260810 킥오프/요약에 없는 파일·수치·이름을 건드리면 착수 전 원본 .jsonl Grep→_INDEX→메모리→질문 순 회수. 원본 트랜스크립트는 디스크 보존(요약 말미 경로). compact-prep §5 재개프로토콜+§4a 킥오프§0 템플릿에 명문화(2프로필). post_compact_verification(검증)의 짝=유실회수
+
 - [토큰 자가감시 범용 배치(개인·회사)](reference_context_selfmonitor_universal.md) — ★260810 compact-prep 스킬·context-guard 후크·context-pct 스크립트를 ~/.claude·~/.claude-company 양 유저레벨에 자립 미러(누수0). context-pct=CLAUDE_CONFIG_DIR 자동감지 범용화. 워크스페이스 후크는 이중발화 방지로 제거. 재시작 후 적용. 미검증=후크 병합규칙(1회 발화 확인 필요)
 
 - [컴팩션 후 재개 검증 절차(필수)](feedback_post_compact_verification.md) — ★260810 컴팩션 요약=기억. 재개 즉시 자동발동: 추측편집 금지(실파일 앵커)·전후 편집 전수 재검증(미치환 grep)·결과 보고·실파일이 정본. 루트 CLAUDE.md 등재. 실사고=태그스윕 미치환+병합행 중첩 오삽입
