@@ -79,6 +79,7 @@
 - [THEMONY Claude 호출=CLI 전용](feedback_themony_claude_cli_only.md) — API 과금 금지, harness/cli_client 경유(구독)
 - [THEMONY 하네스 v2](project_themony_harness_v2.md) — 병렬수집·제목심사·3중게이트, scheduler 전환(260703)
 - [미확인·추정을 사실처럼 말하지 말 것](feedback_no_unverified_as_fact.md) — ★260801. 검증/인용만 사실 단정·실측은 측정값 명시·추정은 "추정·확인필요" 먼저 밝힘·모르면 모른다. "4~8주"·"하루10건" 추정 단정이 계기
+- [버튼 이모지 금지→아이콘](feedback_no_emoji_in_buttons.md) — ★260810 버튼·인터랙티브에 이모지(✎·🔍) 금지, phosphor 아이콘 사용. 편집=IconButton+PencilSimple(NoteResult/Person 스타일). 배지 ✨/⚠도 Sparkle/Warning 아이콘. 실사례 OUTBOX [✎수정]→IconButton(4acd4a0)
 - [한글 응답 설정](feedback_language.md) — 모든 대화·설명 한글
 - [시각 작업 눈 검증 필수](feedback_visual_verification.md) — 코드성공≠시각정상. 렌더를 적대적으로 눈검증. 렌더 이상신호를 툴아티팩트로 성급히 기각 금지
 - [Figma SECTION 자식=상대좌표](reference_figma_section_relative_coords.md) — ★섹션 appendChild 후 절대좌표=밖으로 튕김. 로컬좌표 사용
