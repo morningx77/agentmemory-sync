@@ -1,5 +1,7 @@
 # Memory Index
 
+- [CNOTE 프로세스 개선 제안 5건(마스터 채택 대기)](project_cnote_process_tiering_proposal.md) — ★260810 실측기반 발행: 티어링 T1직행/T2풀·1게이트1주인·핸드오프1회발행·안티그래비티=저위험만·규칙 통폐합 분기1회. 사용자 승인完·마스터 처리 확인 필요. 부속합의=역할영속·세션은 배치단위
+
 - [FP 세션(재무설계+파이썬자동화+풀스택) 프로젝트](project_fp_finance_automation.md) — ★260810 신설. 별칭 FP=3역 겸직. 폴더=IMGINE/03_projects/260810_FP(표준구조+01_docs 4분류+_INDEX). ★데이터원칙=로컬전용·git커밋금지·자격증명분리·가정라벨. 상태=셋업만 완료, 스택·첫스텝·데이터소스 미정(사용자 대기)
 
 - [컴팩트 재개=킥오프 밖 맥락은 추측금지·원본 실검색](feedback_post_compact_context_recall.md) — ★260810 킥오프/요약에 없는 파일·수치·이름을 건드리면 착수 전 원본 .jsonl Grep→_INDEX→메모리→질문 순 회수. 원본 트랜스크립트는 디스크 보존(요약 말미 경로). compact-prep §5 재개프로토콜+§4a 킥오프§0 템플릿에 명문화(2프로필). post_compact_verification(검증)의 짝=유실회수
