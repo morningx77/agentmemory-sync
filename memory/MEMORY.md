@@ -1,5 +1,7 @@
 # Memory Index
 
+- [CNOTE Figma 아이콘 라이브러리(🎨 Icon·Phosphor 1512셋)](reference_cnote_figma_icon_library.md) — ★260812 화면 조립 시 아이콘은 SVG 직접그리기 금지·라이브러리 컴포넌트 인스턴스로. Format×Weight variant. SCR_HOME 재구성 정본=섹션 2545:7208(라이트 2549:126/다크 2563:126). 사용자 지적으로 29개 SVG→인스턴스 전량 교체
+
 - [CNOTE 프로세스 개선 5건 — ★채택 완료](project_cnote_process_tiering_proposal.md) — ★260810 마스터 반영完(4파일+루트): 티어링 T1직행/T2풀·1게이트1주인(★②는 절충=게이트 재실행 금지하되 **대사표 실측 유지**)·핸드오프1회발행·안티그래비티=저위험만·규칙 다이어트 분기1회. 남은위험=T1 오판은 사후회고에서만 드러남
 
 - [CNOTE 체크리스트 v1.1 — 하류 대조](project_cnote_checklist_v11_downstream.md) — ★260810 A3-05 신설(판정규칙 확정 전 하류 화면 1:1 대조·게이트가 못 잡는 유형)+B1-05 확장(빈상태 이중의미 금지). 104→105. ⚠**§5-5 상계 1건 미이행** — 다음 분기 다이어트에서 1건 하향·폐기 필요
