@@ -94,7 +94,7 @@
 - [docx 처리 절차](feedback_docx_handling.md) — docx 전달시 pandoc 변환 먼저, 그다음 버전 비교
 - [CNOTE Figma 변수/폰트](project_cnote_figma_variables.md) — Variables 바인딩·다크모드 완료. node 3:2 레퍼런스. Pretendard MCP 로드불가
 - [CNOTE 와이어프레임 IA 산출물](project_cnote_wireframe_ia.md) — v2 36화면 IA 엑셀+분할이미지+Figma보드
-- [agentmemory 설치 현황](project_agentmemory.md) — 작업 자동기록(로컬DB/iii). 로그인 자동시작. 재시작해야 캡처
+- [agentmemory 설치 현황 + ★260813 전량유실 사고](project_agentmemory.md) — ★사실상 한 번도 영속된 적 없었다(예약작업 WorkingDirectory 공란→상대경로 ./data 가 System32 로→미영속·재시작마다 전량소실). 예약작업 WD 적용完·start-daemon.ps1 미보강(잔여). 판별식 4종·복구순서(검증 없이 import 금지)·30분 백업 .agentmemory-sync. ★보조기억일 뿐 1차사료=저널·대장. 관할=vs마스터. summarize 실패는 결함 아닌 LLM압축OFF 정책의 부작용
 - [PS5.1 BOM 함정](reference_ps51_bom.md) — BOM없는 UTF-8 .ps1은 PS5.1서 파서에러. 셋업전 BOM 확인
 - [세션 별칭 레지스트리](project_session_alias_registry.md) — 멀티세션 별칭(피그마/기획/오피스)+SessionStart 후크로 역할질문
 - [CNOTE Storybook 캐시 긴경로 함정](reference_cnote_storybook_cache_longpath.md) — .cache 긴경로 스킵→deps 504. 캐시삭제 후 재기동, 압축시 .cache 제외
