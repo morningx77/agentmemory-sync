@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 9c0b9b86-936a-4d31-9f94-e1910d50c034
-  modified: 2026-08-14T04:57:03.180Z
+  modified: 2026-08-14T05:54:34.826Z
 ---
 
 ★260814 크리에이티브 세션. `SCR_NOTE_RESULT`(미팅 정리 결과 = **저장 전 검수** 화면)를 **분절 카드 스택 → AI가 저술한 한 편의 리포트**로 재설계, **컨셉 확정**(사용자). ★실행(mid-fi 정본 역반영·device)은 **미착수 · 별도 배분** — 크리에이티브는 정본·device·후속큐를 **건드리지 않았다**.
@@ -25,4 +25,13 @@ metadata:
 
 **함정(실행 세션)**: ★**정본에 상태를 만들면 flows.json·_screen_links 등록까지가 1단위**(v0.37·v0.39.2에서 같은 사고 2회 — `display:none` 대체표기는 flow에서 못 연다). `rebuild_flow.mjs`만 사용(=[[reference_flow_btnnav_rebuild_trap]]).
 
-관련: [[project_cnote_ibms2_spec_v1]] · [[project_cnote_rams_philosophy]] · [[feedback_design_holistic_not_piecemeal]] · [[project_tieming_bi]]
+★★**260814 후행 — 패턴 P6 온컬러 규약(마스터 1204 승인 · 사용자 확정)**. P1이 마스트헤드를 컬러 면으로 만들었는데 **그 위 글자·선 규약이 없어** 정본이 흰색 **알파 9종**으로 위계를 만들었다 → ★**다크 면에서 붕괴**(실측 인물sub 3.51·메타 3.40 = 본문AA 미달 / 테두리 1.98·1.71 = 비텍스트AA 미달). ★원인 = **다크 면 `#6549FF`가 라이트 `#4127D1`보다 밝다** → 라이트만 보면 전부 통과해 놓친다. ★기존 `primary-subtle`/`muted`는 **모드에 따라 뒤집혀** 못 쓴다(다크 3.04/2.58).
+→ ★**확정 고정 4종(모드 스위칭 없음)**: `oncolor-strong` #FFFFFF(8.62/5.32) · `-muted` #EDEAFF(7.31/4.51) · `-line` #C5BBFF(4.90/3.02) · `-divider` #8873FF(2.44/1.50 · **장식 전용·글자 금지**). ★위계는 **투명도가 아니라 크기·굵기**가 만든다(알파는 중복이었다). ★아웃라인 강도 1종 통일(§4 같은 문법).
+★★**진짜 값어치 = 색이 아니라 재발 지점 제거** — 알파를 안 쓰면 `text-white/95`가 클래스로 생성되지 않아 검게 되는 사고(1058·1066)가 **날 자리가 없다**. device의 `rgba()→text-white+opacity` 번역 계약도 불필요해진다.
+★★★**그러나 토큰만으론 안 막힌다(1208 실측)**: `check-foundation`에서 **알파수식자는 `warnings`라 통과**하고 **hex 직접은 `findings`라 차단** → ★가장 안전해 보이는 알파 회귀가 **유일하게 조용히 잘못되는 길**. → **토큰 신설 → 잔존 0 → 차단 승격**이 1단위(제안 발행·관제 판정 대기).
+★**별개 부채**: `tailwind.config.cjs:24` 실측 = 팔레트가 `var(--x)` 직접이라 **`<alpha-value>` 전역 미지원** — 어느 토큰에든 `/95`를 붙이면 조용히 사라진다.
+★**다인 미팅 변형 승인**: 아바타 스택 + `외 N명`, `＋인물 추가`는 폐기가 아니라 **`✎ 인물`에 흡수**(신규 컴포넌트 0). 근거 = 다수 참석은 실재 개념(`04_people:1425` 참석자 3명 스위처).
+★**FU-90/§4 = 보류**(마스터가 §4 원문 열고 판정 예정). 제출 근거 = §4 `:95` 판별식이 *"다른 화면으로 나가면 분리"*이고 예시가 **캘린더(외부)**인데 **시트는 나가지 않는다** + 프로젝트가 이미 시트를 `SHEET_OPEN`으로 **btnNav 밖**에 둔다(1190) + ★역설: **제자리 펼침이야말로 대조를 깬다**(요약이 화면 밖으로 밀림).
+★실행 상태 = 정본 **v0.58.0**(NOTE_RESULT·NOTE_DETAIL 마스트헤드·`BS_SOURCE` 칩) · device **v0.50.0** 이식完. ★마커명 정정 = 브리프 `SHEET_SOURCE` → **`BS_SOURCE`**(시트 관례 `BS_*` 100% 지배).
+
+관련: [[project_cnote_ibms2_spec_v1]] · [[project_cnote_rams_philosophy]] · [[feedback_design_holistic_not_piecemeal]] · [[project_tieming_bi]] · [[project_cnote_design_foundation]]
