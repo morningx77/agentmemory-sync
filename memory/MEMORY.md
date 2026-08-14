@@ -1,6 +1,6 @@
 # Memory Index
 
-- [SCR_NOTE_RESULT 리포트화 확정](project_cnote_note_result_report.md) — ★260808 크리에이티브. 정리결과=저장전 검수화면을 **한 편의 리포트**로. 3변경=히어로→**마스트헤드**·관련인물 **통합**·스크립트펼침→**`원본`칩+시트**(★기본=요약근거 발췌, 발화 100~300 대응). FU-92·93 닫힘제안/FU-91 해소/FU-90 확대. ★personal=제목없음 계약·sales-new는 OFF가 정본·OFF엔 행선지줄 없음. 실행 미착수(핸드오프 발행)
+- [SCR_NOTE_RESULT 리포트화 확정](project_cnote_note_result_report.md) — ★260814 크리에이티브. 정리결과=저장전 검수화면을 **한 편의 리포트**로. 3변경=히어로→**마스트헤드**·관련인물 **통합**·스크립트펼침→**`원본`칩+시트**(★기본=요약근거 발췌, 발화 100~300 대응). FU-92·93 닫힘제안/FU-91 해소/FU-90 확대. ★personal=제목없음 계약·sales-new는 OFF가 정본·OFF엔 행선지줄 없음. 실행 미착수(핸드오프 발행)
 
 - [CNOTE Figma 아이콘 라이브러리(🎨 Icon·Phosphor 1512셋)](reference_cnote_figma_icon_library.md) — ★260812 화면 조립 시 아이콘은 SVG 직접그리기 금지·라이브러리 컴포넌트 인스턴스로. Format×Weight variant. SCR_HOME 재구성 정본=섹션 2545:7208(라이트 2549:126/다크 2563:126). 사용자 지적으로 29개 SVG→인스턴스 전량 교체
 
