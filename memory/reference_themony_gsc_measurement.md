@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 65ee744c-c1c6-4520-901a-b07c503118b7
-  modified: 2026-08-10T01:42:24.644Z
+  modified: 2026-08-21T14:33:44.614Z
 ---
 
 THEMONY(themony.com) 구글 색인상태를 코드로 실측하는 방법 (260801 확립). AdSense 검토요청 타이밍을 "날짜 아닌 데이터"로 판정하기 위함.
@@ -23,6 +23,12 @@ THEMONY(themony.com) 구글 색인상태를 코드로 실측하는 방법 (26080
 - 구글은 한글 permalink를 **원문 UTF-8 + trailing slash** 형태로 색인함. `urlInspection.index.inspect`에 넣는 inspectionUrl도 **반드시 원문 UTF-8+슬래시**여야 매칭됨.
 - WP REST `link` 필드는 **퍼센트인코딩**으로 옴 → 그대로 조회하면 전 URL이 "Google에 알려지지 않은 URL"로 나옴(오판). 반드시 `urllib.parse.unquote(path)` + 슬래시 보장 후 조회.
 - 스크립트 정본: 스크래치패드 `gsc_inspect_v2.py`(norm() 함수), `recrawl_promote.py`(사이트맵 제출+색인요청 URL목록).
+
+### ★반대 방향 — 서버 직접 조회는 퍼센트인코딩이어야 함 (260821 실측)
+- **GSC API = 원문 UTF-8 / 서버(curl·fetch) = 퍼센트인코딩.** 정반대다. 헷갈리면 양쪽 다 오판한다.
+- `https://themony.com/개인정보처리방침/` (원문) → **404**. `/%ea%b0%9c%ec%9d%b8.../` → 200. cafe24/openresty가 경로를 정규화하지 않는다.
+- 이걸 몰라 색인 211건 조회에서 **"198건이 404"라는 허위 재난 결론**을 한 번 냈다(실제는 111건). 계산기·개인정보처리방침처럼 **존재가 확실한 URL이 404로 나오면 인코딩부터 의심**할 것.
+- ★안전한 방법 = **WP REST `link` 필드를 그대로 fetch에 넘긴다**(이미 퍼센트인코딩이고 자동 처리됨). 손으로 `encodeURIComponent` 하면 **`·`(U+00B7)가 깨져** 엉뚱한 URL을 부른다 — 이걸로 "본문 수정이 반영 안 됨" 오판을 또 한 번 냈다(실제는 정상 반영).
 
 ## 260801 실측 결과 (소수정예 직후)
 - 리라이트 30개: 29 색인됨(2097만 미색인)·**07-31 이후 재크롤 0/30**(전부 07-04~07-23 크롤=개선 전). → 구글은 아직 옛 버전만 봄.
