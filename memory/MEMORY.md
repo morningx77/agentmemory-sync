@@ -1,5 +1,9 @@
 # Memory Index
 
+- [★타인 블로그 조회수/방문자 API 3종](reference_naver_blog_metrics_api.md) — ★260823 **"남의 블로그 조회수는 못 본다"는 틀렸다**. `m.blog.naver.com/api/blogs/{id}/popular-post-list` → **viewCount=실제 글별 조회수**(11/11 커버·TOP10 고정). 방문자5일치=`NVisitorgp4Ajax.naver`(2/11). 오늘/누적방문+이웃=모바일홈 JSON. ★함정=readCount는 항상0 · **공감수는 이웃수 교란이라 성과지표 금지** · PostTitleListAsync는 categoryNo 무시 · 부모카테고리는 자식글 반환
+
+- [홍기자 성공패턴 역설계 + 8/20 노출차단](project_hongkija_success_pattern.md) — ★260823 4~5월대박→6~7월붕괴→8월회복. **연예 4곳 동반 −37~53%**(교육은 평평)=외부 로직변경 지지. ★**8/20 방문24만 다음날부터 신규글 공감 상한이 9로 눌림**(3일연속). ★확정=**훅문법은 성공요인 아님**(반전접속이 하락기 최다75%, yeji2552서 재현)·**제작량 무관**(이미지23→16 줄이고 회복)·성공모델 둘(A실명낚시/B완결사건문). 정본=01_docs/검토_분석/_네이버블로그_성과지표_API정본_260823.md
+
 - [기각 전 4단 재심 필수(FP)](feedback_reexamine_before_rejection.md) — ★260823 평이한 사고로 폐기 금지. ①역방향 ②조건부분해 ③역할전환 ④제약재정의 후에만 기각. 재심 발견=가설 승격(채택 아님). 실사례=수급 역방향·시간외 재정의
 
 - [일부만 보고 "없다" 금지 · 실측 규율 6](feedback_partial_response_is_not_absence.md) — ★260814~21 FP 7건 반복, 대부분 사용자가 먼저 발견. **조용히 틀린다**(조회 성공+그럴듯한 숫자). KIS output1 미확인→시총 있었음 · 유무상증자 piic_/fric_ 접두사로 설명 통째 빔 · thstrm_add_amount. 도구=`api_probe.py` 전필드덤프. 자매규율=0채움금지·달력박지말기·"결과있으면맞다"금지·반대말·절대날짜금지
