@@ -16,7 +16,14 @@ GET https://m.blog.naver.com/api/blogs/{blogId}/popular-post-list
     Referer: https://m.blog.naver.com/{blogId}
 → result.popularPostList[].viewCount  ★실제 조회수
 ```
-- **커버리지 11/11(전 블로그)** · **상위 10건 고정**(itemCount·page·limit 무효) · 창은 최근 1~2주
+- **커버리지 11/11(전 블로그)** · **상위 10건 고정**(itemCount·page·limit 무효)
+- ⚠️★**날짜 지정 불가.** `date` `startDate/endDate` `period` `days` 전부 **무시**(260823 실측: 응답 동일)
+- ⚠️★★**실시간 카운터가 아니다 — 주기적 배치값.** 같은 날 11:01 / 21:59 두 번 받았는데 **세 글 모두 증감 0**.
+  값의 뜻은 "지금까지의 조회수"가 아니라 **어떤 집계 기간의 누적**이다. ★**"당일 조회수"는 내 블로그(cv-ranks)만 가능**
+- ※방문자·이웃(`PostList.naver`)은 반대로 **실시간**이다(같은 날 13,822→13,897). 조회수와 혼동 금지
+- ⚠️★**약 1주일 지연.** 08-23 시점에 12곳 어디에도 **08-16 이후 발행글이 TOP10에 없다** → 지금 보이는 건 대략 **08-08~08-16 주간** 기준.
+  판정할 때 이 시차를 빼고 읽으면 안 된다(내 글 효과는 발행 ~2주 뒤에야 남의 API에 보인다)
+- 순위 창 ≠ 발행일 창 — k-manyo TOP10엔 **05-25 글**도 있다. "최근 기간 조회수" 순위라 오래된 글도 들어온다
 - ⚠️ **`readCount` 는 함정** — 같은 응답에도 post-list 에도 있지만 타인 블로그는 **항상 null/0**. 조회수는 오직 `viewCount`
 - 10건 한계는 **매일 수집으로 넘는다**(증분 + TOP10 신규 진입이 신호)
 
@@ -43,6 +50,15 @@ GET https://m.blog.naver.com/PostList.naver?blogId={id}&tab=1
 - **공감수를 성과 지표로 쓰지 말 것** — 이웃 수 교란. 이웃 7,379→공감 106 / 이웃 711→공감 42 인데 **방문자는 1,318 vs 6,376 정반대**
 - 태그 위치가 블로그마다 다름: 본문 `.__se-hash-tag` vs `BlogTagListInfo.naver` API. 본문만 보면 빈 값
 - 정규식 `(\d{4})\.\s*(\d{2})` 는 `2026. 6.` 를 못 잡음 → `\d{1,2}`
+
+## ★수집기 함정 (260823 실사고 — 두 달간 조용히 실패 중이었음)
+`tools/blog_watch/` Task `BLOGWATCH-collect`(09/21시)가 **매 실행 실패**하고 있었다. 둘 다 수정 완료.
+1. **스케줄러 인자의 `	`가 탭 문자로 변환** → `blog_watch<TAB>ask_collect.py` = 파일 없음(결과코드 2).
+   등록 시 `-Argument ('"{0}"' -f $path)` 로 따옴표 감싸서 재등록해야 한다
+2. `collect.py` 가 `sys.stdout.buffer` 를 감싸는데 진입점 `task_collect.py` 가 stdout을 **StringIO로 교체** → `AttributeError`.
+   → `if hasattr(sys.stdout,"buffer"):` 가드 추가
+★교훈 = **결과코드 0이어도 데이터 파일 mtime을 봐라.** 1번 고친 뒤 0이 떴지만 2번 때문에 여전히 아무것도 안 썼다.
+※ 실행 직후 결과코드 **267009 = 아직 실행 중** — 성급히 실패로 읽지 말 것
 
 ## 도구
 - 감시기 `03_dev/260220_BLOG_AUTO_V2/tools/blog_watch/` — Task `BLOGWATCH-collect` 09/21시 자동
