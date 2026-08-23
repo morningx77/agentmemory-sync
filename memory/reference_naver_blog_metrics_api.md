@@ -27,21 +27,36 @@ GET https://m.blog.naver.com/api/blogs/{blogId}/popular-post-list
 - ⚠️ **`readCount` 는 함정** — 같은 응답에도 post-list 에도 있지만 타인 블로그는 **항상 null/0**. 조회수는 오직 `viewCount`
 - 10건 한계는 **매일 수집으로 넘는다**(증분 + TOP10 신규 진입이 신호)
 
-## ② 일별 방문자 5일치
+## ★★② 조회수 추정 — 방문자로 푼다 (260823 확정)
+```
+조회수 ÷ 방문수 = 1.38   (내 블로그 15일 실측 · 1.32~1.45 · 변동계수 2.9%)
+조회수 ÷ 순방문(UV) = 1.42                    체류 224~277초로 동반 안정
+```
+- ★**`dayVisitorCount`(PostList.naver, 전 블로그 무인증)가 위젯 API 값과 완전 일치**(3곳 전부 차이 0)
+  → **위젯 공개 여부와 무관하게 모든 블로그의 일별 방문자를 얻을 수 있다.** `NVisitorgp4Ajax` 는 굳이 필요 없다
+- ★그래서 **1주 지연 배치값(popular-post-list)을 기다릴 필요가 없다** — 매일 21시 `dayVisitorCount` 를 찍고 ×1.38
+- ⚠️1.38은 **내 블로그 값**. 글 길이·내부링크 구조에 따라 블로그마다 다를 수 있어 **블로그 간 절대비교엔 오차**.
+  단 **같은 블로그의 시계열 비교엔 비율이 얼마든 무관** — 실무 목적엔 충분
+- ⚠️**누적방문 델타를 24시간 환산하면 +30% 과대**(낮 시간대만 재서). 2곳에서 +28%/+31% 일관.
+  → 환산하지 말고 `dayVisitorCount` 를 쓸 것
+- ★크리에이터 어드바이저 내부값 대조: `view-count`(조회) / `visit-count`(방문) / `uv-count`(순방문) / `average-duration`(체류).
+  **외부 `dayVisitorCount` = 내부 `visit-count`** (8/22 둘 다 5,874 정확 일치)
+
+## ③ 일별 방문자 5일치
 ```
 GET https://blog.naver.com/NVisitorgp4Ajax.naver?blogId={id}
 → <visitorcnt id="20260820" cnt="244609" />
 ```
 - 커버리지 **2/11** — 블로거 테마·위젯 설정에 따라 공개. 발견 경로 = PC HTML 의 `visitorgp_vars.req_url`
 
-## ③ 오늘/누적 방문자 + 이웃
+## ④ 오늘/누적 방문자 + 이웃
 ```
 GET https://m.blog.naver.com/PostList.naver?blogId={id}&tab=1
 → "dayVisitorCount" "totalVisitorCount" "subscriberCount"
 ```
 - ⚠️ **방문자다. 조회수(페이지뷰)가 아니다.** 내 블로그 통계 '조회수'와 같은 축 비교 금지
 
-## ④ 글목록+공감/댓글
+## ⑤ 글목록+공감/댓글
 `GET /api/blogs/{id}/post-list?categoryNo={n}&itemCount=30&page={p}`
 - ⚠️ **`PostTitleListAsync.naver` 는 categoryNo 를 무시**(cat0=cat42 동일 반환). 카테고리 수집에 쓰면 조용히 전체가 섞인다
 - ⚠️ **부모 카테고리는 자식 글을 그대로 반환** — yeji2552 cat38(부모)·cat45(자식) 60편 100% 동일
