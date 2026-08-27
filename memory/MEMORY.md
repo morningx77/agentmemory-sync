@@ -1,5 +1,7 @@
 # Memory Index
 
+- [★.mcp.json은 프로필이 아니라 폴더 계층으로 상속](reference_mcp_json_folder_inheritance.md) — ★260827 실사고. CLAUDE_CONFIG_DIR로 프로필 갈라도 부모 `.mcp.json`의 MCP가 자식 트리 세션에 그대로 실린다(회사 user스코프 비었는데도 로드됨·`mcp_instructions_delta` 실증). ★경로문자열은 컨텍스트에 안 들어감(그건 과장)·새는 건 **서버명+안내문+도구명**. ★더 위험한 건 `permissions.allow` — 승인 명령 원문이 쌓여 **평문 자격증명 잔존**(앱 비번 실발견→재발급 필요). 정리는 행단위 JSON 재파싱·실패시 원복
+
 - [프롬프팅=긍정공식·반사적 금지추가 금지](feedback_positive_prompting_no_reflex_ban.md) — ★260826 금지목록=풍선효과(사고5건 실증). 문제발견→검증항목 추가가 아니라 생성공식 보강. 레드라인 5개 이내·검사는 검증층 파일에만. 내 재발사례 포함
 - [★타인 블로그 조회수/방문자 API 3종](reference_naver_blog_metrics_api.md) — ★260823 **"남의 블로그 조회수는 못 본다"는 틀렸다**. `m.blog.naver.com/api/blogs/{id}/popular-post-list` → **viewCount=실제 글별 조회수**(11/11 커버·TOP10 고정). 방문자5일치=`NVisitorgp4Ajax.naver`(2/11). 오늘/누적방문+이웃=모바일홈 JSON. ★함정=readCount는 항상0 · **공감수는 이웃수 교란이라 성과지표 금지** · PostTitleListAsync는 categoryNo 무시 · 부모카테고리는 자식글 반환
 - [대기 금지·병목 파이프라인화](feedback_no_idle_waiting.md) — ★260823 "두번다시 기다리게 하지 말라". 대기=준비시간(끝나면 실행만)·스톨은 무스로틀 1콜 30초 격리·타임라인은 묻기 전에 제시
