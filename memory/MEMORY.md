@@ -97,6 +97,7 @@
 - [★홈판 붕괴 원인=소재](project_imgsrc_blog_collapse.md) — 홈판 편성이 소재를 갈랐다. 연애 30%/2,728 ↔ 학력 90%/34,400. **형식은 무죄**
 - [★타인 블로그 조회수 API](reference_naver_blog_metrics_api.md) — popular-post-list→viewCount. readCount 항상0·**공감수는 지표 금지**
 - [홍기자 성공패턴=절차](project_hongkija_success_pattern.md) — 공식은 원인 아님. 효력 감쇠곡선·조기경보 3종. 규칙 박제 금지
+- [★발행=zip 하나로 이식](feedback_publish_zero_install.md) — 어느 PC든 ①클로드생성 ②zip받기 ③설치기+확장등록. 트랙 바뀌어도 불변. ★코드 고치면 zip 재생성
 - [크롬확장 자동화](project_chrome_ex.md) — MV3. chrome.debugger+CDP
 - [DEEPNAUT 유튜브 프레임](project_deepnaut_youtube_frames.md) · [글쓰기 삽입](project_deepnaut_editor_injector.md) · [자동로그인](project_deepnaut_naver_login_ext.md) — installer(8777)·신뢰입력·수동1회 세션유지
 - [AdSense 니치집중](project_themony_adsense_niche_focus.md) · [콘텐츠 개선](project_themony_adsense_remediation.md) — 공개108→57. 경험날조 제거·wp:html
