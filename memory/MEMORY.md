@@ -81,7 +81,7 @@
 ## 인프라 / 환경
 
 - [★워크스페이스 회사/개인 분리](project_workspace_company_personal_split.md) — 회사=ISPARK/. CLAUDE.md만 상위상속(누수)·settings/MCP/메모리 격리
-- [★agentmemory + 260813 전량유실](project_agentmemory.md) · [회사↔집 동기화](project_agentmemory_sync_cross_pc.md) — 예약작업 WD 공란→System32. **보조기억일 뿐 1차사료=저널·대장**
+- [★agentmemory 사고 2건(260813·260903)](project_agentmemory.md) · [회사↔집 동기화](project_agentmemory_sync_cross_pc.md) — ★LISTEN≠정상(/health로 판정)·cwd상속하면 빈 저장소 생성. **보조기억일 뿐 1차사료=저널·대장**
 - [★git useHttpPath 전역 금지](reference_git_credential_usehttppath_trap.md) — 전역에 켜면 회사 push 통째 불가. includeIf 하위에만
 - [프로필 분리(CLAUDE_CONFIG_DIR)](reference_claude_profile_split_company_personal.md) — VS Code=회사/Antigravity=개인. ★.cmd는 ASCII전용
 - [토큰 자가감시 배치](reference_context_selfmonitor_universal.md) — 양 프로필 자립 미러
