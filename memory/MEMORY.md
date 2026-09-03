@@ -13,7 +13,7 @@
 - [규율 승격=문서 등재까지](feedback_rule_promotion_needs_doc.md) — 확인=정본 grep. ★해시 일치≠화면 정상
 - [디자인 요소는 의미를](feedback_design_meaningful_elements.md) — 분모 없는 게이지=거짓. 규율은 나쁜 디자인만 막는다
 - [디자인=전체시스템](feedback_design_holistic_not_piecemeal.md) — 국소반영하면 매 수정이 새 결함
-- [시각 작업 눈 검증](feedback_visual_verification.md) — 코드성공≠시각정상. 적대적으로 본다
+- [★시각 작업 눈 검증](feedback_visual_verification.md) — 코드성공≠시각정상. ★「면이 보인다」는 backgroundColor 로 안 잡힌다(box-shadow·filter·::before 함께). className 도 렌더에서 읽어라
 - [완료=확인위치 안내](feedback_design_output_location.md) — Figma 링크(노드ID·페이지)
 - [대기 금지](feedback_no_idle_waiting.md) — 대기=준비시간. 타임라인 먼저
 - [토큰효율 실행전략](feedback_token_efficient_execution.md) — 직접vs서브에이전트·스크립트·모델라우팅
