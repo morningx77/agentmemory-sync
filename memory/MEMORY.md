@@ -5,6 +5,7 @@
 - [★.mcp.json은 폴더 계층 상속](reference_mcp_json_folder_inheritance.md) — 260827 프로필 갈라도 부모 .mcp.json이 자식 트리에 실린다. `permissions.allow`엔 평문 자격증명이 쌓인다
 - [★일부만 보고 "없다" 금지](feedback_partial_response_is_not_absence.md) — FP 7건. 조용히 틀린다(조회 성공+그럴듯한 숫자). 빈 결과=범위 의심 먼저
 - [★미확인·추정을 사실처럼 말하지 말 것](feedback_no_unverified_as_fact.md) — 검증만 단정·추정은 "확인필요" 먼저·모르면 모른다
+- [★본문이 셸을 거치면 백틱이 실행된다](feedback_shell_body_corruption.md) — 260904 실사고. 도구엔 파일경로만 넘겼는데 그 파일을 만든 `python -c`가 셸이라 파일명 3개 증발. **무음**(exit 0·사후검증 통과). Write 도구로 만들 것
 - [★컴팩션 후 재개 검증](feedback_post_compact_verification.md) · [맥락 회수](feedback_post_compact_context_recall.md) — 요약=기억. 추측편집 금지·실파일이 정본. 밖 맥락은 원본 .jsonl Grep→_INDEX→메모리→질문
 - [컴팩트 시 킥오프 자동생성](feedback_compact_kickoff_doc.md) — §0=붙여넣기. 요청 없어도 자동
 - [★일관성 > 축별 최적·60대](feedback_consistency_over_local_optimum.md) — "이 화면만 예외"를 혼자 가르지 마라. 범위는 "무엇을 가졌느냐"로 센다
@@ -13,6 +14,7 @@
 - [규율 승격=문서 등재까지](feedback_rule_promotion_needs_doc.md) — 확인=정본 grep. ★해시 일치≠화면 정상
 - [디자인 요소는 의미를](feedback_design_meaningful_elements.md) — 분모 없는 게이지=거짓. 규율은 나쁜 디자인만 막는다
 - [디자인=전체시스템](feedback_design_holistic_not_piecemeal.md) — 국소반영하면 매 수정이 새 결함
+- [★빌드·배포 출력 자르지 마라](feedback_never_truncate_build_output.md) — tail이 경고와 종료코드를 먹는다. deploy-sftp는 빌드 안 한다
 - [★시각 작업 눈 검증](feedback_visual_verification.md) — 코드성공≠시각정상. ★「면이 보인다」는 backgroundColor 로 안 잡힌다(box-shadow·filter·::before 함께). className 도 렌더에서 읽어라
 - [완료=확인위치 안내](feedback_design_output_location.md) — Figma 링크(노드ID·페이지)
 - [대기 금지](feedback_no_idle_waiting.md) — 대기=준비시간. 타임라인 먼저
