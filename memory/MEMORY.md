@@ -30,6 +30,7 @@
 ## CNOTE / Tieming
 
 - [마스터 역할](project_cnote_master_role.md) — 정문·유형판정·라우팅·게이트·자기개선루프. 실행은 안 함
+- [★ag 세션 온보딩 규약](project_cnote_ag_session_onboarding.md) — 배분=handoff_to에 내 별칭 있을 때만. ★claim done은 점유 안 꺼짐(status 직접 변경). device 게이트 12종(문서의 10은 낡음)
 - [프로세스 개선 5건](project_cnote_process_tiering_proposal.md) — 티어링 T1/T2·1게이트1주인·핸드오프1회
 - [체크리스트 v1.1](project_cnote_checklist_v11_downstream.md) — 105항목. ⚠§5-5 상계 1건 미이행
 - [IA 정책 G0~G7](project_cnote_ia_policy_g_batch.md) — v0.17~0.20. nav 1depth·5탭 불변·헤더 🤖🔔
@@ -75,6 +76,7 @@
 - [화면설계 파이프라인](reference_screen_design_pipeline.md) · [로파이 HTML](project_cnote_wireframe_html.md) · [IA 산출물](project_cnote_wireframe_ia.md) — /screen-pipeline+워커3종·check-coverage
 - [CDS 하네스](reference_cds_harness.md) · [병렬 하네스](reference_cds_parallel_harness.md) — 워커6종·게이트2종. 클레임/락/저널
 - [협업 저널 훅](reference_journal_notify_hook.md) — journal-notify.mjs·세션별커서
+- [★ag세션 온보딩 정본](reference_ag_session_onboarding.md) — ag기획=정본·ag스토리북=device. ★claim은 done append로 안 꺼진다(status 직접 갱신)·보고=요구/전/후/확인
 - [이메일 템플릿](reference_cnote_email_templates.md) — 공통 OTP폼·Pleos계승
 - [대비이슈→이슈2](next_session_cnote_contrast.md) · [다음 세션](next_session_cnote.md) · [현황](project_cnote.md) — 이슈1 완료·다크카드 분리감
 
