@@ -15,6 +15,7 @@
 - [디자인 요소는 의미를](feedback_design_meaningful_elements.md) — 분모 없는 게이지=거짓. 규율은 나쁜 디자인만 막는다
 - [디자인=전체시스템](feedback_design_holistic_not_piecemeal.md) — 국소반영하면 매 수정이 새 결함
 - [★빌드·배포 출력 자르지 마라](feedback_never_truncate_build_output.md) — tail이 경고와 종료코드를 먹는다. deploy-sftp는 빌드 안 한다
+- [★본문을 셸에 싣지 마라](feedback_visual_verification.md) — 백슬래시·백틱=조용한 훼손(하루 6회·라이브 유출 2건). 패치는 파일로 써서 node. 한글 \u 금지. className도 토큰으로 대조
 - [★시각 작업 눈 검증](feedback_visual_verification.md) — 코드성공≠시각정상. ★「면이 보인다」는 backgroundColor 로 안 잡힌다(box-shadow·filter·::before 함께). className 도 렌더에서 읽어라
 - [완료=확인위치 안내](feedback_design_output_location.md) — Figma 링크(노드ID·페이지)
 - [대기 금지](feedback_no_idle_waiting.md) — 대기=준비시간. 타임라인 먼저
