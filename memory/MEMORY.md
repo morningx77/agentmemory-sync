@@ -3,7 +3,7 @@
 ## 규율
 
 - [★.mcp.json은 폴더 계층 상속](reference_mcp_json_folder_inheritance.md) — 260827 프로필 갈라도 부모 .mcp.json이 자식 트리에 실린다. `permissions.allow`엔 평문 자격증명이 쌓인다
-- [★일부만 보고 "없다" 금지](feedback_partial_response_is_not_absence.md) — FP 7건. 조용히 틀린다(조회 성공+그럴듯한 숫자). 빈 결과=범위 의심 먼저
+- [★일부만 보고 "없다" 금지](feedback_partial_response_is_not_absence.md) — FP 7건 + 260904 검사식 5건. 조용히 틀린다. ★한 이름만 보는지 의심(도구도 앓는다)·경계는 파서에서 읽어라·도구 탓 전에 내 필터부터
 - [★미확인·추정을 사실처럼 말하지 말 것](feedback_no_unverified_as_fact.md) — 검증만 단정·추정은 "확인필요" 먼저·모르면 모른다
 - [★본문이 셸을 거치면 백틱이 실행된다](feedback_shell_body_corruption.md) — 260904 실사고. 도구엔 파일경로만 넘겼는데 그 파일을 만든 `python -c`가 셸이라 파일명 3개 증발. **무음**(exit 0·사후검증 통과). Write 도구로 만들 것
 - [★한글을 \uXXXX로 쓰지 마라](feedback_no_unicode_escape_for_hangul.md) — 260904 「촬영」이 「췬영」으로 라이브에 나갔다. **스크린샷 눈검증하고도 못 봤다**(눈은 보정한다). 철자는 기계 대조. F2-15/16
