@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: project
   originSessionId: a1564576-d2f1-4b63-8e58-a95aa706891e
-  modified: 2026-09-03T09:11:57.863Z
+  modified: 2026-09-06T07:33:52.617Z
 ---
 
 CNOTE 안티그래비티 세션(`ag스토리북`=device / `ag기획`=정본) 운영 규약. 정본 문서 =
@@ -21,6 +21,8 @@ CNOTE 안티그래비티 세션(`ag스토리북`=device / `ag기획`=정본) 운
   유휴면 "자원한다"고 알리고 지정을 기다린다. 첫 배분을 받으면 **접수 한 줄을 저널에 남긴다**(도달 확인 수단이 그것뿐이다).
 - **claim 3스텝**: 전체 읽기 → `claim-append.mjs <파일.json>` → **다시 읽어 더 이른 것에 양보**.
   조회는 `check-claims.mjs` 로만 — 손으로 JSON 세면 없는 키를 읽어 거짓 0이 난다.
+  ★★단 **그 도구가 260906 현재 줄마다 센다**(`check-claims.mjs` 242행 · id별 최신이 아니다) → **점유가 부풀어 보인다.**
+  수정 청구 대기 중이니 **먼저 고쳐졌는지 확인**하고, 안 고쳐졌으면 **id별 최신으로 직접 세라**. 상세 = [[reference_ag_session_onboarding]]
 - ★**claim 해제 결함(도구 미교정 · 실측 확인함)**: `done` 을 append 해도 **점유가 안 꺼진다.**
   리더는 항목별 `status` 로 세는데(`check-claims.mjs` `NOT_HOLDING` 필터) 라이터는 `json.claims.push` 로 **새 항목만 추가**한다.
   → 해제는 **그 항목의 `status` 를 직접 `released` 로** 바꾸고, 리더 재실행으로 0을 확인한 뒤 통지한다.
