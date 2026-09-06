@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: cde9ec63-a46d-4b06-a884-43e7289c8a1c
-  modified: 2026-09-04T06:48:06.653Z
+  modified: 2026-09-06T08:03:45.222Z
 ---
 
 **응답의 일부만 보고 "없다"고 말하지 않는다.** 새 엔드포인트는 전 필드를 덤프한 뒤 판단한다.
@@ -65,5 +65,18 @@ metadata:
 **교차 층 따름정리**: 같은 지시가 두 층(정본↔device)에서 다른 결과를 내면 **같은 지시가 아니다.**
 정본에서 이미 도달 불가였던 화면을 지우는 건 청소지만, device에서 살아 있는 걸 지우면 기능 제거다.
 층을 맞추기 전에 **그 요소의 도달 가능성을 양쪽에서 따로 잰다.**
+
+## 260906 CNOTE — ★**부재 증명의 형태**를 바꾼다 (하루 3건, 전부 내 검사식)
+
+- **claim 조회** — `_storybook_claims.json`을 배열로 파싱하다 실패했는데 `catch`가 **빈 배열로 삼켜** "점유 0건". 실제 구조는 `claims` 키를 가진 객체이고 종료 상태는 `released` **말고 `done`도** 있다(626건).
+- **emit 검사** — `CARD_NOTE_SUMMARY` 대문자로 찾았는데 provider는 `card_note_summary` **소문자**로 쓴다. 6/6이 ✗로 찍혔지만 **내용은 맞고 검사가 틀렸다**. 불일치 때 로그 원문을 함께 뽑게 해 둔 덕에 잡았다.
+- **flows.json** — `BS_SCHEDULE_EDIT|create` 문자열로 찾아 "0건"이라 보고. ★**flows.json은 `screen`과 `state`를 두 필드로 쓴다** — 그 문자열은 애초에 생길 수 없다. 내 "0건"이 마스터의 오기록까지 끌고 갔다.
+
+★**새 축 = 같은 관계를 층마다 다르게 적는다.** `flows.json`은 두 필드, `_screen_links`·`_nav_map`·`btnNav`는 파이프(`화면|상태`). 한 표기로 전 층을 훑으면 **조용히 0건**이 난다.
+
+★★**처방(오늘의 한 줄)** — **"없다"를 말하기 전에 있는 것을 한 번 출력해 본다.**
+부재 증명은 **존재 목록을 먼저 찍고 거기 없음을 보이는** 형태여야 한다. 이번엔 `BS_SCHEDULE_EDIT` step을 나열만 했어도 30초에 보였다. `grep -c`로 0을 확인하는 것은 증명이 아니라 **내 표기 가설의 확인**일 뿐이다.
+
+★관련 축 — **`check-claims.mjs` 242행은 줄마다 센다**(id별 최신이 아니다). 그래서 `released`를 append해도 원본 `building` 줄이 열린 채 남는다: 사람은 해제했다고 믿고 도구는 잡고 있다고 본다. **해제는 원본 줄의 `status`를 직접 바꾼다.** 팀은 이 도구 결함을 고치지 않고 **규율로 외우고 있었고**, 규율은 잊혀 두 세션이 막혔다 → **도구 결함을 규율로 덮으면 사고는 사라지지 않고 주기만 길어진다.**
 
 [[feedback_no_unverified_as_fact]] · [[feedback_visual_verification]] · [[project_fp_finance_automation]]
