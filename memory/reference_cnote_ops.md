@@ -5,6 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 26da2990-5736-4b13-9636-9d5ffad0098d
+  modified: 2026-09-07T01:45:15.731Z
 ---
 
 CNOTE screen_design_v2 운영 자동화(2026-06-26 구축). 하네스 철학 = 결정론은 스크립트, 판단만 에이전트.
@@ -14,6 +15,12 @@ CNOTE screen_design_v2 운영 자동화(2026-06-26 구축). 하네스 철학 = �
 - **자격증명**: `.deploy.local.json`(로컬 전용·공유 금지, `.example` 템플릿). `sftp{host,user,pass,remoteDir}` · `firestore{project,apiKey,collection}`. **코드·에이전트에 하드코딩/노출 절대 금지.**
 - `.claude/agents/screen-ops.md` — 운영 워커. 스크립트 호출+검증+보고, config는 읽지도 출력도 안 함. tools=Read,Bash,Glob,Grep.
 - SFTP 서버: `140.238.15.203` `/upload` (user `yschoi2`). ⚠ 비번이 대화에 노출됐으므로 변경 필요.
+
+★★**빌드는 git 이 아니라 작업 트리에서 뜬다 — 커밋 없이도 배포된다**(260907 실사고 · 저널 3732).
+`global.css` 줄바꿈 전역이 **`M`(미커밋)인 채로 2차 배포에 실려 라이브에 나가 있었다.** 작성자는 라이브에서 눈으로 확인까지 하고도 커밋을 안 한 줄 몰랐다.
+- ★**「배포됐다」는 「커밋됐다」의 증거가 아니다.** 두 축이 따로 논다.
+- ★위험 = **`git checkout` 한 번이면 라이브가 되돌아가고 아무도 모른다.** 편할 때는 안 보이고 되돌릴 때만 보인다.
+- ★**배포 전 `git status` 를 본다.** 그리고 **내가 만든 변경은 내가 커밋한다** — 남이 내 파일을 커밋하게 두지 않는다.
 
 재배포: `node scripts/build_prototype.mjs && node scripts/deploy-sftp.mjs`
 

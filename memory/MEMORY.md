@@ -76,7 +76,7 @@
 - [Dynamic Layer](project_cnote_dynamiclayer_library.md) · [Claude Design Home 시안](reference_claude_design_cnote_home.md) — 컴포넌트40+토큰21. DesignSync MCP
 - [Flow Player](reference_cnote_flow_player.md) · [btnNav 재빌드 함정](reference_flow_btnnav_rebuild_trap.md) — emitCta→btnNav. build_btn_nav 마지막 실행 필수
 - [메뉴 순서 정본=flows.json](reference_cnote_menu_order_ssot.md) — check-menu-order 게이트
-- [운영도구(배포·DB)](reference_cnote_ops.md) · [KEX 해결](reference_cnote_deploy_sftp_kex_fix.md) — screen-ops·db-admin. ssh2-sftp-client 단일연결
+- [운영도구(배포·DB)](reference_cnote_ops.md) · [KEX 해결](reference_cnote_deploy_sftp_kex_fix.md) — screen-ops·db-admin. ssh2-sftp-client 단일연결. ★빌드가 작업 트리에서 뜬다 = 커밋 없이도 배포된다(배포됐다≠커밋됐다)
 - [화면링크 추적허브](reference_cnote_screen_links.md) — _screen_links.json
 - [화면설계 파이프라인](reference_screen_design_pipeline.md) · [로파이 HTML](project_cnote_wireframe_html.md) · [IA 산출물](project_cnote_wireframe_ia.md) — /screen-pipeline+워커3종·check-coverage
 - [CDS 하네스](reference_cds_harness.md) · [병렬 하네스](reference_cds_parallel_harness.md) — 워커6종·게이트2종. 클레임/락/저널
