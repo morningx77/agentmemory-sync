@@ -15,6 +15,7 @@
 - [프롬프팅=긍정공식](feedback_positive_prompting_no_reflex_ban.md) — 금지목록=풍선효과. 생성공식을 보강한다
 - [규율 승격=문서 등재까지](feedback_rule_promotion_needs_doc.md) — 확인=정본 grep. ★해시 일치≠화면 정상
 - [디자인 요소는 의미를](feedback_design_meaningful_elements.md) — 분모 없는 게이지=거짓. 규율은 나쁜 디자인만 막는다
+- [★로고=법칙을 눈에 보이게 적용](feedback_logo_apply_laws_visibly.md) — 문서화≠적용. "없는 것" 4개 지목·차용 샘플 옆에 붙이기·사선은 격자 벡터(1,2)·종단 처리가 인상을 가름·판 위 여백 2u
 - [디자인=전체시스템](feedback_design_holistic_not_piecemeal.md) — 국소반영하면 매 수정이 새 결함
 - [★빌드·배포 출력 자르지 마라](feedback_never_truncate_build_output.md) — tail이 경고와 종료코드를 먹는다. deploy-sftp는 빌드 안 한다
 - [★본문을 셸에 싣지 마라](feedback_visual_verification.md) — 백슬래시·백틱=조용한 훼손(하루 6회·라이브 유출 2건). 패치는 파일로 써서 node. 한글 \u 금지. className도 토큰으로 대조
@@ -61,7 +62,7 @@
 - [튜토리얼 시트 흐름](project_cnote_tutorial_sheet_flow.md) — 시트안 마무리·passthrough 제거
 - [녹음 진입 설계](project_cnote_recording_entry.md) — FAB 통일. 탭=즉시/롱프레스=시트
 - [설정+사람 카테고리](project_cnote_settings_people.md) — 설정9+사람6. PersonHeroCard
-- [Tieming 브랜드·스플래시](project_cnote_brand_tieming.md) · [BI](project_tieming_bi.md) — SCR_SPLASH·온보딩 재설계. m 파동/오른쪽 정점 골드
+- [Tieming 브랜드·스플래시](project_cnote_brand_tieming.md) · [★BI v3](project_tieming_bi.md) — ★260908 v3 5안 "완벽" 판정(P2 시계e·P4 각진m 유력, 선택 대기). 파동-m 폐기. 근거=조형법칙 분석문서+sample_logo2. 격자 벡터 사선·색은 심볼에만·워드 1:6 각진 종단
 - [v0.8.0 설계변경](project_cnote_v08_design_batch.md) — 캘린더→일정·홈카드2. v0.8.5 명함카드
 - [v0.6 씨앗홈](project_cnote_v06_seed_onboarding.md) · [온보딩JIT](project_cnote_v06_onboarding_jit.md) — SeedCard v2·가치먼저. 설정→마이 승격
 - [v0.5 홈풍성화](project_cnote_v05_home_company_news.md) — 3선반+SCR_COMPANY_NEWS
