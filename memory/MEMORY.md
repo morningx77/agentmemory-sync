@@ -9,7 +9,7 @@
 - [★본문이 셸을 거치면 백틱이 실행된다](feedback_shell_body_corruption.md) — 260904 실사고. 도구엔 파일경로만 넘겼는데 그 파일을 만든 `python -c`가 셸이라 파일명 3개 증발. **무음**(exit 0·사후검증 통과). Write 도구로 만들 것
 - [★한글을 \uXXXX로 쓰지 마라](feedback_no_unicode_escape_for_hangul.md) — 260904 「촬영」이 「췬영」으로 라이브에 나갔다. **스크린샷 눈검증하고도 못 봤다**(눈은 보정한다). 철자는 기계 대조. F2-15/16
 - [★빌드·배포 출력 자르지 마라](feedback_never_truncate_build_output.md) — tail이 경고와 종료코드를 먹는다. deploy-sftp는 빌드 안 한다
-- [★컴팩션 후 재개 검증](feedback_post_compact_verification.md) · [맥락 회수](feedback_post_compact_context_recall.md) — 요약=기억. 추측편집 금지·실파일이 정본. 밖 맥락은 원본 .jsonl Grep→_INDEX→메모리→질문
+- [★컴팩션 후 재개 검증](feedback_post_compact_verification.md) · [맥락 회수](feedback_post_compact_context_recall.md) — 요약=기억. 추측편집 금지·실파일이 정본. 밖 맥락은 원본 .jsonl Grep→_INDEX→메모리→질문. ★★요약은 ★사용자 발화도 지어낸다(260909 · 인용은 원문부터 · 못 찾으면 「요약에 그렇게 적혀 있다」)
 - [컴팩트 시 킥오프 자동생성](feedback_compact_kickoff_doc.md) — §0=붙여넣기. 요청 없어도 자동
 - [★일관성 > 축별 최적·60대](feedback_consistency_over_local_optimum.md) — "이 화면만 예외"를 혼자 가르지 마라. 범위는 "무엇을 가졌느냐"로 센다
 - [기각 전 4단 재심](feedback_reexamine_before_rejection.md) — 역방향·조건부분해·역할전환·제약재정의 후에만
