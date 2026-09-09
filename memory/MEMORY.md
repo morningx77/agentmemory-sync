@@ -37,7 +37,7 @@
 ## CNOTE / Tieming
 
 - [마스터 역할](project_cnote_master_role.md) — 정문·유형판정·라우팅·게이트·자기개선루프. 실행은 안 함
-- [★ag 세션 온보딩 규약](project_cnote_ag_session_onboarding.md) — 배분=handoff_to에 내 별칭 있을 때만. ★claim done은 점유 안 꺼짐(status 직접 변경). device 게이트 12종(문서의 10은 낡음)
+- [★ag 세션 온보딩 규약](project_cnote_ag_session_onboarding.md) — 배분=handoff_to에 내 별칭 있을 때만. ★claim done은 점유 안 꺼짐(status 직접 변경). ★게이트 수는 외우지 말고 package.json `gate` 체인에서 센다(10→12→13 계속 늘어남)
 - [프로세스 개선 5건](project_cnote_process_tiering_proposal.md) — 티어링 T1/T2·1게이트1주인·핸드오프1회
 - [체크리스트 v1.1](project_cnote_checklist_v11_downstream.md) — 105항목. ⚠§5-5 상계 1건 미이행
 - [IA 정책 G0~G7](project_cnote_ia_policy_g_batch.md) — v0.17~0.20. nav 1depth·5탭 불변·헤더 🤖🔔
