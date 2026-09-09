@@ -62,7 +62,7 @@
 - [튜토리얼 시트 흐름](project_cnote_tutorial_sheet_flow.md) — 시트안 마무리·passthrough 제거
 - [녹음 진입 설계](project_cnote_recording_entry.md) — FAB 통일. 탭=즉시/롱프레스=시트
 - [설정+사람 카테고리](project_cnote_settings_people.md) — 설정9+사람6. PersonHeroCard
-- [Tieming 브랜드·스플래시](project_cnote_brand_tieming.md) · [★BI v3](project_tieming_bi.md) — ★260908 v3 5안 "완벽" 판정(P2 시계e·P4 각진m 유력, 선택 대기). 파동-m 폐기. 근거=조형법칙 분석문서+sample_logo2. 격자 벡터 사선·색은 심볼에만·워드 1:6 각진 종단
+- [Tieming 브랜드·스플래시](project_cnote_brand_tieming.md) · [★★BI 정본=TEM-W2](project_tieming_bi.md) — ★260909 확정: 덩어리에서 판 T·E·m 한 몸 + 1u 홈 + 틈 있는 주황 e. 의미=「틈」. 주황=사람 자리에만. SVG 7종·v8 시트. 8라운드 교훈(부품 얹기→표지판 / 블록m→샤오미). 다음=규격·계약개정·Figma
 - [v0.8.0 설계변경](project_cnote_v08_design_batch.md) — 캘린더→일정·홈카드2. v0.8.5 명함카드
 - [v0.6 씨앗홈](project_cnote_v06_seed_onboarding.md) · [온보딩JIT](project_cnote_v06_onboarding_jit.md) — SeedCard v2·가치먼저. 설정→마이 승격
 - [v0.5 홈풍성화](project_cnote_v05_home_company_news.md) — 3선반+SCR_COMPANY_NEWS
