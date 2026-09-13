@@ -13,6 +13,7 @@
 - [컴팩트 시 킥오프 자동생성](feedback_compact_kickoff_doc.md) — §0=붙여넣기. 요청 없어도 자동
 - [★일관성 > 축별 최적·60대](feedback_consistency_over_local_optimum.md) — "이 화면만 예외"를 혼자 가르지 마라. 범위는 "무엇을 가졌느냐"로 센다
 - [기각 전 4단 재심](feedback_reexamine_before_rejection.md) — 역방향·조건부분해·역할전환·제약재정의 후에만
+- [★가이드 먼저·게이트는 마지막](feedback_guide_first_gate_last.md) — 260913 사장님 반복 지적. 위반을 보면 ①원칙이 워커의 읽는 경로에 있나 grep ②있는데 어겼으면 원인 ③필요할 때만 최소 게이트
 - [프롬프팅=긍정공식](feedback_positive_prompting_no_reflex_ban.md) — 금지목록=풍선효과. 생성공식을 보강한다
 - [규율 승격=문서 등재까지](feedback_rule_promotion_needs_doc.md) — 확인=정본 grep. ★해시 일치≠화면 정상
 - [디자인 요소는 의미를](feedback_design_meaningful_elements.md) — 분모 없는 게이지=거짓. 규율은 나쁜 디자인만 막는다
