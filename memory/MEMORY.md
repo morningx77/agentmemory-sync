@@ -99,6 +99,7 @@
 - [세션 별칭 레지스트리](project_session_alias_registry.md) · [워크스페이스 자동화](project_workspace_automation.md) — SessionStart 역할질문. /meeting·/weekly
 - [폴더 형상관리](reference_folder_governance.md) · [API 키 레지스트리](reference_api_keys.md) — 000000_INFO/API_KEYS.md
 - [PS5.1 BOM 함정](reference_ps51_bom.md) — BOM없는 .ps1은 파서에러
+- [★slide-master PPTX 변환 함정 3종](reference_slide_master_pptx_export_traps.md) — 게이트·SVG렌더 통과해도 PowerPoint서 붕괴. ①tspan줄묶음→독립text ②Pretendard Variable→한글대체(정적 설치·NameFarEast로 검증) ③굵기2단→heavy/light_family+w400. 회람=SVG발 PDF
 - [Figma SECTION 상대좌표](reference_figma_section_relative_coords.md) · [스킬 설치](reference_figma_skills_install.md) — 절대좌표는 밖으로 튕김
 - [NativeWind Animated className](reference_nativewind_animated_classname.md) — Animated.View엔 style만
 - [FP 세션(재무설계+자동화)](project_fp_finance_automation.md) — 3역 겸직. 데이터=로컬전용·git금지
