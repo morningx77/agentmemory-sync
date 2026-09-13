@@ -13,6 +13,7 @@
 - [컴팩트 시 킥오프 자동생성](feedback_compact_kickoff_doc.md) — §0=붙여넣기. 요청 없어도 자동
 - [★일관성 > 축별 최적·60대](feedback_consistency_over_local_optimum.md) — "이 화면만 예외"를 혼자 가르지 마라. 범위는 "무엇을 가졌느냐"로 센다
 - [기각 전 4단 재심](feedback_reexamine_before_rejection.md) — 역방향·조건부분해·역할전환·제약재정의 후에만
+- [★관제는 답 받으면 즉시 발행](feedback_master_no_stall_after_answer.md) — 260913 답 받고 멈춰 워커 2시간 대기. 입구가 하나면 관제 정지 = 전체 정지
 - [★사장님 질문 창구=관제 하나](feedback_single_question_channel.md) — 260913 두 창 이중 질문으로 답이 반대로 남음. 여쭙는 중이면 기다린다 · 질문은 화면·버튼·이동을 풀어 쓰고 미리보기 · 「2열」 같은 용어는 뜻 고정
 - [★가이드 먼저·게이트는 마지막](feedback_guide_first_gate_last.md) — 260913 사장님 반복 지적. 위반을 보면 ①원칙이 워커의 읽는 경로에 있나 grep ②있는데 어겼으면 원인 ③필요할 때만 최소 게이트
 - [프롬프팅=긍정공식](feedback_positive_prompting_no_reflex_ban.md) — 금지목록=풍선효과. 생성공식을 보강한다
