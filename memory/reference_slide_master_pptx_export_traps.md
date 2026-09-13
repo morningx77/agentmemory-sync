@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: reference
   originSessionId: 5ae1536b-02db-4405-94ea-c07226b39b56
-  modified: 2026-09-13T02:44:42.984Z
+  modified: 2026-09-13T06:04:07.521Z
 ---
 
 260913 UX Korea PPT(23장)에서 실측. **게이트 23/23·원고 기계대조·SVG 렌더 눈검증을 전부 통과한 덱이 PowerPoint로 열자 망가져 있었다.** PowerPoint COM으로 슬라이드를 PNG로 뽑아 보고서야 드러났다.
@@ -29,6 +29,14 @@ metadata:
   - 300 → `"Pretendard Light", …` + weight 400 · 700/400 → `"Pretendard"` 그대로
   - 부분 굵기 `<tspan>`에도 패밀리 명시(부모 패밀리 상속 오류 방지 — 변환기는 tspan font-family를 읽음)
 - 번들에 Black 없음 → 900은 800으로. 브라우저·PowerPoint 동일 렌더를 샘플로 선검증할 것
+
+## 260913 재구성 덱(이미지·차트·노트)에서 추가로 밟은 것
+- **이미지 상대경로 소실**: `page.setContent(svg)`로 렌더/PDF를 뽑으면 `href="../images/…"`가 안 풀려 **이미지만 조용히 빠진다**. SVG·HTML을 파일로 두고 `page.goto(file URL)` + `--allow-file-access-from-files`. 뽑은 뒤 `document.querySelectorAll('image').length`·`pdfimages -list`로 개수 확인
+- **Edit 치환 끝 공백 소실**: `old/new_string` 끝의 공백이 지워져 `y="648"font-family` → XML 깨짐. 속성 경계에서 끊지 말 것 · 편집 후 `grep '"font-family'`
+- **대조 스크립트 빈 통과**: 파서가 0블록인데 "누락 0" 출력 → **검사 건수를 반드시 출력**하고, 실제 SVG를 1글자 변조해 검출되는지 확인([[feedback-partial-response-is-not-absence]])
+- **글리프**: `✕`(U+2715)·`⊂`(U+2282)는 Pretendard에 없음 → PDF `pdffonts -f N -l N` 쪽별 조회로 위치 특정. `✕`→`×`
+- **네이티브 표 표식**: SVG 셀을 여러 줄 `<text>`로 나누면 metadata 셀도 `{"paragraphs":[…]}`로 줄 단위 일치시켜야 경고가 사라진다
+- COM 글꼴 검증은 **본 글꼴 목록(fonts_seen)을 먼저 찍고** 대체 0을 말할 것
 
 ## 그 밖
 - 회람은 **SVG에서 뽑은 PDF**(Chromium page.pdf · 폰트 임베드). PPTX는 받는 PC에 폰트가 없으면 여전히 대체
