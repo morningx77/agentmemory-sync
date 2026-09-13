@@ -18,3 +18,7 @@ CNOTE 스토리북(react-native-web + NativeWind)에서 **NativeWind는 `Animate
 ```
 
 ★교훈: 게이트·type-check PASS여도 렌더는 깨질 수 있다 → [[feedback_visual_verification]] 눈검증 필수. Toast 컴포넌트(260721)에서 실제 발생·수정. 향후 Animated 쓰는 신규 컴포넌트(스낵바·시트 슬라이드·스켈레톤 등) 모두 동일 패턴 적용.
+
+**★값 0 인 transform 클래스는 CSS 를 안 낸다 (260913 · W2 작업대 · 커밋 58e102f6)** — `className="translate-x-0"` 을 넣어도 계산 스타일 `transform` 이 `none` 으로 남았다(값이 0이라 변환이 생성되지 않는다). `position: fixed` 자식을 가두려고 containing block 을 만들 때 이 클래스는 **효과가 0**이다. 되는 것 = `style={{ transform: [{ translateX: 0 }] }}` (RN Web 이 `translateX(0px)` 를 실제로 낸다 → fixed 기준이 그 조상이 된다).
+- **Why:** 클래스 한 줄로 될 거라 가정했다가 실측(fixed 요소마다 기준이 창인지 조상인지 `getComputedStyle` 로 쟀다)에서 창 기준 그대로인 걸 보고서야 알았다. 눈으로는 「조금 바뀐 것 같다」로 속기 쉽다.
+- **How to apply:** NativeWind 클래스가 **레이아웃 부수효과**(containing block·stacking context)를 위한 것이면 붙이고 끝내지 말고 **계산 스타일을 잰다**. ⚠ RN `Modal` 은 body 로 포털되어 transform 조상으로도 **안 갇힌다**(작업대 시트는 본문만 올린다). ⚠ 틀에 같이 건 `overflow-hidden` 이 그림자·툴팁을 자를 수 있다.
