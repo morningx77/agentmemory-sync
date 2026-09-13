@@ -79,6 +79,7 @@
 - [스토리북 v2=RN](project_cnote_storybook_v2_rn.md) · [3층 구조정리](project_cnote_storybook_structure_reorg.md) — NativeWind. Component/Module/Page
 - [스토리북 위계 게이트](reference_storybook_hierarchy_gate.md) — check-hierarchy.mjs. flow참조 id 보존
 - [캐시 긴경로 함정](reference_cnote_storybook_cache_longpath.md) — .cache 스킵→deps 504
+- [★작업대 Tailwind 스캔 구멍](reference_playground_tailwind_scan_gap.md) — content=src·.storybook뿐 → playground 전용 클래스는 CSS 조용히 없음. 게이트도 안 봄. 시안 전 클래스 실재 검산+행별 눈검증
 - [Dynamic Layer](project_cnote_dynamiclayer_library.md) · [Claude Design Home 시안](reference_claude_design_cnote_home.md) — 컴포넌트40+토큰21. DesignSync MCP
 - [Flow Player](reference_cnote_flow_player.md) · [btnNav 재빌드 함정](reference_flow_btnnav_rebuild_trap.md) — emitCta→btnNav. build_btn_nav 마지막 실행 필수
 - [메뉴 순서 정본=flows.json](reference_cnote_menu_order_ssot.md) — check-menu-order 게이트
