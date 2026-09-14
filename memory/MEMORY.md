@@ -7,6 +7,7 @@
 - [★충실도 검증≠의미 검수](feedback_fidelity_check_is_not_meaning_review.md) — 260913 PPT 기계대조·실렌더 0결함인데 제목 모호·인용 모순·노트 과장. 원고 단계에서 작성자 아닌 2관점 독립 검수(청중·논리 / 사실·근거). ★260914: 인용은 요약 정본 말고 원문과 대조 · 반영본을 한 번 더 검수(수정이 결함을 만든다)
 - [★미확인·추정을 사실처럼 말하지 말 것](feedback_no_unverified_as_fact.md) — 검증만 단정·추정은 "확인필요" 먼저·모르면 모른다
 - [★경보는 범위부터 재고 전달하라](feedback_scope_before_amplifying_alarm.md) — 260909 워커 셋이 헛재검증. 3문=어느것·몇건·재현되나. ★전달 전 원 보고를 연다(중복을 새것으로 포장=관제 최대 소음). ★알림의 exit 인용 금지—본문을 읽어라
+- [★줄끝은 node 로 잰다](reference_line_ending_measure_with_node.md) — 260914 Git Bash `grep -c $'\r$'` 오측정(LF 파일을 CRLF 3261로). mid-fi 파일마다 줄끝이 다르고 01은 섞임 → 문자열 치환으로 보존
 - [★본문이 셸을 거치면 백틱이 실행된다](feedback_shell_body_corruption.md) — 260904 실사고. 도구엔 파일경로만 넘겼는데 그 파일을 만든 `python -c`가 셸이라 파일명 3개 증발. **무음**(exit 0·사후검증 통과). Write 도구로 만들 것
 - [★한글을 \uXXXX로 쓰지 마라](feedback_no_unicode_escape_for_hangul.md) — 260904 「촬영」이 「췬영」으로 라이브에 나갔다. **스크린샷 눈검증하고도 못 봤다**(눈은 보정한다). 철자는 기계 대조. F2-15/16
 - [★빌드·배포 출력 자르지 마라](feedback_never_truncate_build_output.md) — tail이 경고와 종료코드를 먹는다. deploy-sftp는 빌드 안 한다
