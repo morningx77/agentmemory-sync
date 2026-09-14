@@ -5,7 +5,7 @@ metadata:
   node_type: memory
   type: feedback
   originSessionId: cde9ec63-a46d-4b06-a884-43e7289c8a1c
-  modified: 2026-08-23T09:09:49.418Z
+  modified: 2026-09-14T09:01:07.869Z
 ---
 
 ★260823 사용자: *"앞으로 두번 다시 기다리게 하지 말고 제대로 일을 처리해줬으면 좋겠어."*
@@ -21,4 +21,8 @@ metadata:
    우리 버그다. ([[reference-throttle-inverse-trap]] · 데이터소스 정본 §10-3)
 3. **다단계 작업은 타임라인 표(단계·선행조건·추정소요·예정일)를 묻기 전에 먼저 제시**하고,
    각 단계 완료를 실측으로 보고한다.
-[[feedback-token-efficient-execution]] [[feedback-no-unverified-as-fact]]
+4. ★**CNOTE 워커판(260914 사용자 「왜 멈춰있지?」)** — 배분이 「정본 착지 뒤 device」 라도 **「배분 오면 착수」 로 끝내지 않는다.**
+   정본 대기 중에 할 것 = ⓐ대상 device 파일·props·스토리·사용처 선행 실측 → **저널로 정본 작성자에게** 넘긴다(정본이 device 현실에 맞게 쓰인다)
+   ⓑ관제가 「다음 편집 때」로 미룬 작은 정리(주석 등)를 지금 끝낸다 ⓒ그래도 없으면 킥오프 · 기존 실패 테스트 등 부채를 보고.
+   ★응답을 「대기합니다」로 닫지 말 것 — 닫기 전에 위 ⓐ~ⓒ 중 한 가지를 실행했는지 본다.
+[[feedback-token-efficient-execution]] [[feedback-no-unverified-as-fact]] [[feedback-worker-no-direct-user-question]]

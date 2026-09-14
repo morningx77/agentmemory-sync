@@ -28,7 +28,7 @@
 - [★storybook `tsc -p .` = 빈 검사](reference_storybook_tsc_p_dot_empty.md) — files [] + references 라 src 0 파일. 정본 = `npm run type-check`. 검사 파일 수부터 찍어라
 - [★시각 작업 눈 검증](feedback_visual_verification.md) — 코드성공≠시각정상. ★「면이 보인다」는 backgroundColor 로 안 잡힌다(box-shadow·filter·::before 함께). className 도 렌더에서 읽어라
 - [완료=확인위치 안내](feedback_design_output_location.md) — Figma 링크(노드ID·페이지)
-- [대기 금지](feedback_no_idle_waiting.md) — 대기=준비시간. 타임라인 먼저
+- [★대기 금지](feedback_no_idle_waiting.md) — 대기=준비시간. 타임라인 먼저 · ★워커는 「정본 뒤 착수」 여도 선행 실측→저널 · 미룬 정리 지금(260914 「왜 멈춰있지?」)
 - [토큰효율 실행전략](feedback_token_efficient_execution.md) — 직접vs서브에이전트·스크립트·모델라우팅
 - [배포는 요청 시에만](feedback_deploy_on_request_only.md) — 임의 배포 금지
 - [버튼 이모지 금지](feedback_no_emoji_in_buttons.md) — phosphor. 편집=IconButton+PencilSimple
