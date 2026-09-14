@@ -4,7 +4,7 @@
 
 - [★.mcp.json은 폴더 계층 상속](reference_mcp_json_folder_inheritance.md) — 260827 프로필 갈라도 부모 .mcp.json이 자식 트리에 실린다. `permissions.allow`엔 평문 자격증명이 쌓인다
 - [★일부만 보고 "없다" 금지](feedback_partial_response_is_not_absence.md) — FP 7건 + 260904 검사식 5건 + 260906 3건. 조용히 틀린다. ★한 이름만 보는지 의심(도구도 앓는다)·경계는 파서에서 읽어라·도구 탓 전에 내 필터부터. ★★**부재 증명 = 존재 목록을 먼저 찍는다**(표기는 층마다 다르다)
-- [★충실도 검증≠의미 검수](feedback_fidelity_check_is_not_meaning_review.md) — 260913 PPT 기계대조·실렌더 0결함인데 제목 모호·인용 모순·노트 과장. 원고 단계에서 작성자 아닌 2관점 독립 검수(청중·논리 / 사실·근거)
+- [★충실도 검증≠의미 검수](feedback_fidelity_check_is_not_meaning_review.md) — 260913 PPT 기계대조·실렌더 0결함인데 제목 모호·인용 모순·노트 과장. 원고 단계에서 작성자 아닌 2관점 독립 검수(청중·논리 / 사실·근거). ★260914: 인용은 요약 정본 말고 원문과 대조 · 반영본을 한 번 더 검수(수정이 결함을 만든다)
 - [★미확인·추정을 사실처럼 말하지 말 것](feedback_no_unverified_as_fact.md) — 검증만 단정·추정은 "확인필요" 먼저·모르면 모른다
 - [★경보는 범위부터 재고 전달하라](feedback_scope_before_amplifying_alarm.md) — 260909 워커 셋이 헛재검증. 3문=어느것·몇건·재현되나. ★전달 전 원 보고를 연다(중복을 새것으로 포장=관제 최대 소음). ★알림의 exit 인용 금지—본문을 읽어라
 - [★본문이 셸을 거치면 백틱이 실행된다](feedback_shell_body_corruption.md) — 260904 실사고. 도구엔 파일경로만 넘겼는데 그 파일을 만든 `python -c`가 셸이라 파일명 3개 증발. **무음**(exit 0·사후검증 통과). Write 도구로 만들 것
@@ -24,7 +24,8 @@
 - [디자인=전체시스템](feedback_design_holistic_not_piecemeal.md) — 국소반영하면 매 수정이 새 결함
 - [★빌드·배포 출력 자르지 마라](feedback_never_truncate_build_output.md) — tail이 경고와 종료코드를 먹는다. deploy-sftp는 빌드 안 한다
 - [★본문을 셸에 싣지 마라](feedback_visual_verification.md) — 백슬래시·백틱=조용한 훼손(하루 6회·라이브 유출 2건). 패치는 파일로 써서 node. 한글 \u 금지. className도 토큰으로 대조
-- [★JSX 주석은 {/* */}](feedback_jsx_comment_brace.md) — 260909 ★세 번째. 자식 자리 누락은 ★tsc·게이트 17종·gate:render 를 ★전부 통과하고 ★화면에 글자로 찍힌다. 헬퍼로 뽑을 때 터진다
+- [★JSX 주석은 자리마다 형태](feedback_jsx_comment_brace.md) — 자식 자리 {/* */}(누락=화면 글자·260909 ×3) · 식 자리(`&& (` 뒤) /* */(중괄호=모듈 404·260914). 헬퍼로 뿌릴 때 터진다 · 편집 뒤 esbuild 파싱
+- [★storybook `tsc -p .` = 빈 검사](reference_storybook_tsc_p_dot_empty.md) — files [] + references 라 src 0 파일. 정본 = `npm run type-check`. 검사 파일 수부터 찍어라
 - [★시각 작업 눈 검증](feedback_visual_verification.md) — 코드성공≠시각정상. ★「면이 보인다」는 backgroundColor 로 안 잡힌다(box-shadow·filter·::before 함께). className 도 렌더에서 읽어라
 - [완료=확인위치 안내](feedback_design_output_location.md) — Figma 링크(노드ID·페이지)
 - [대기 금지](feedback_no_idle_waiting.md) — 대기=준비시간. 타임라인 먼저
