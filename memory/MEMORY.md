@@ -33,6 +33,7 @@
 - [★대기 금지](feedback_no_idle_waiting.md) — 대기=준비시간. 타임라인 먼저 · ★워커는 「정본 뒤 착수」 여도 선행 실측→저널 · 미룬 정리 지금(260914 「왜 멈춰있지?」)
 - [토큰효율 실행전략](feedback_token_efficient_execution.md) — 직접vs서브에이전트·스크립트·모델라우팅
 - [배포는 요청 시에만](feedback_deploy_on_request_only.md) — 임의 배포 금지
+- [★CNOTE 배포 뒷정리 3단계](feedback_deploy_aftercare_order.md) — baseline → make-handoff(--since · --until 배포 커밋) → --done. 빼면 변경 이력이 조용히 멈춘다(260914)
 - [버튼 이모지 금지](feedback_no_emoji_in_buttons.md) — phosphor. 편집=IconButton+PencilSimple
 - [투명 outline=서피스 배경](feedback_outline_button_surface_bg.md) — 투명bg는 회색캔버스서 사라짐
 - [크기값=시맨틱 토큰](feedback_semantic_size_tokens.md) — raw px 금지. 코드=SSOT
