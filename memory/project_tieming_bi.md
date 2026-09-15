@@ -5,8 +5,10 @@ metadata:
   node_type: memory
   type: project
   originSessionId: 9c0b9b86-936a-4d31-9f94-e1910d50c034
-  modified: 2026-09-15T11:46:08.532Z
+  modified: 2026-09-15T12:14:40.324Z
 ---
+
+★★★★★260915 **T 심볼 트랙 = M3 떠 있는 날 선택**(시트 https://claude.ai/artifact/Bwqq29hLdXEMdRF5w1gR7c · `02_design/_TieMing_T세련_v10_260915.html`) — 테슬라 작도원리(층·틈·한중심·수렴)로 T1~T4 곡선판을 냈으나 사용자 「겹호가 테슬라 연상」→ **곡선 걷어낸 M1~M4** 중 M3. 격자 24u · 날 x3~21 y20~22 · 틈 1u · 몸통 y15~19 폭24 · 기둥 x9~15 y0~15 · 옆기둥 안변 x3/21 밑변 (1,2) · 날끝=옆기둥안변 세로선. ★교훈: **겹친 동심호+일정 틈 = 테슬라 서명**(원리만 가져와도 곡선이면 연상) · 맞닿는 도형은 **한 윤곽 경로로 합쳐라**(y=15 안티에일리어싱 이음선이 흰색판에서 보였다). SVG 6종 `_Tieming_{심볼_M3_떠있는날_violet/ink/white/appicon, 락업_M3_떠있는날_light/dark}_260915.svg` · 재출력 `export_v10.mjs <키> <YYMMDD>`.
 
 ★★★★260915 **숙성도 라운드(v9 시트 https://claude.ai/artifact/T65YKYgsHn4SmXMjcbJM9L · 파일 `02_design/_TieMing_숙성도_v9_260909.html`)** — 사용자 결정: ①**심볼 = 바이올렛 W2, 1u 홈 없음**으로 전 칸 통일(다크는 #6549FF · SVG는 기존 `_Tieming_심볼_TEM-W2_*_260908.svg`) ②대문자 **N = 넷플릭스식 균일 기둥**(폭 9u′ · 기둥 0~2·7~9 · 사선 (0,14)(2,14)(9,0)(7,0) · 180° 대칭) → M도 같은 **가로 2u′ 띠**(V 바깥 (6,2) · 안쪽 (6,6)) ③g 꼬리 잘림 원인 = 디센더 중심선을 −6u′에 둬 획 바깥이 7u′ → viewBox 밖 1u′ 잘림. 중심선 −5u′로 수정(x높이·캡처럼 바깥 끝 기준) · v8 템플릿·워드마크/락업 SVG 재출력. 레버 4안 = 기준·A(주황→골드)·B(대문자·여백·명조 · 추천)·C(인디고·브론즈) · **B/C 미선택**. ★260915 **A·B SVG 8종** `_Tieming_{A_소문자,B_대문자}_{락업_light,락업_dark,워드마크_ink,워드마크_white}_260915.svg` — 태그라인 한글 **윤곽선화**(A=Pretendard / B=Noto Serif KR VF 400·600 · fontkit getVariation · 기본 wght=200이라 지정 필수) · 재출력 = 스크래치패드 `export_v9.mjs <YYMMDD>`(v9 시트 `<script>`를 vm 실행). 폐기 = N y=2 컷+골드 박스, D(다리 발).
 
