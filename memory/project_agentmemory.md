@@ -70,3 +70,14 @@ metadata:
 - LLM 압축은 **의도적으로 OFF**(API 키 없음·noop provider·BM25 only). ★따라서 `mem::summarize` 실패 카운트가 쌓이는 것은 **결함이 아니라 이 정책의 부작용**이다 — 세션 요약이 안 생기는 것도 설계대로. 켜려면 `~/.agentmemory/.env` 에 키. **`AGENTMEMORY_ALLOW_AGENT_SDK` 는 무한 재귀 위험으로 금지**
 - hook 은 세션 시작 시 로드 → 플러그인 변경 후 **Claude Code 재시작해야 캡처**
 - 관련: [[project-workspace-automation]] · [[reference-claude-profile-split-company-personal]]
+
+## ★260916 규약 변경 — 세션 시작 절차에서 agentmemory 를 뺐다(연구원님 승인 · CNOTE 저널 5442)
+
+**현행 맥락 복원 순서** = 협업 저널 → `_HANDOFF_*`·`_KICKOFF_*` 문서 → `MEMORY.md`+`memory/` → (그래도 없으면) 원본 트랜스크립트 Grep.
+새 세션에서 `memory_save`+`memory_recall` 쌍은 **더 이상 필수가 아니다.** 저널 워처가 없으면 띄운다(`watch-journal.mjs --me {별칭}`).
+★못 찾았으면 **「못 찾았다」고 쓴다** — 「이전 맥락 없음」으로 조용히 넘어가지 않는다(260813 사고 교훈은 그대로).
+
+**왜** = 260915 회사 세션 5개의 agentmemory 실제 호출이 **0회**(tool_use 1,421 중 0). 규율 위반이 아니라 **저널이 더 정확해서** 자연히 안 쓴 것 → 문서를 현실에 맞췄다.
+
+**남긴 용도** = `lessons` 전용(`memory_lesson_save`/`memory_lesson_recall`) — 회고 교훈은 저널에 묻히면 다시 못 찾는다.
+⛔데이터 삭제 0(memories 57 · lessons 73 보존) · MCP 권한 유지 · 되돌림 = `*.bak-260916`(루트 CLAUDE.md · settings.json 2곳 · check-loop.mjs).
