@@ -1,0 +1,105 @@
+{
+  "movedAt": "2026-09-16T02:03:33.300Z",
+  "from": "~/.agentmemory (회사 세션이 쓰는 저장소)",
+  "reason": "개인 프로젝트 언급이 회사 저장소에 남아 있어 회수",
+  "items": [
+    {
+      "concepts": [
+        "세션 별칭",
+        "워크스페이스",
+        "session alias",
+        "client:claude-code"
+      ],
+      "content": "이 세션 별칭=워크스페이스. 현재 세션은 워크스페이스 역할로 시작됨 (2026-08-04). 담당=워크스페이스 관리(회사/개인 폴더 분리 마이그레이션) + THEMONY(개인 프로젝트) AdSense·GSC 작업.",
+      "createdAt": "2026-08-04T00:04:39.768Z",
+      "files": [],
+      "id": "mem_msdwbx7f_64a14eee704e",
+      "isLatest": true,
+      "sessionIds": [],
+      "sourceObservationIds": [],
+      "strength": 7,
+      "supersedes": [],
+      "title": "이 세션 별칭=워크스페이스. 현재 세션은 워크스페이스 역할로 시작됨 (2026-08-04). 담당=워크스페이스 관리(회사/개인 폴더 분리 마이그",
+      "type": "fact",
+      "updatedAt": "2026-08-04T00:04:39.768Z",
+      "version": 1
+    },
+    {
+      "concepts": [
+        "세션 별칭",
+        "FP",
+        "Financial Planner",
+        "재무설계",
+        "자산관리",
+        "session alias",
+        "client:claude-code"
+      ],
+      "content": "이 세션 별칭=FP. 현재 세션은 FP(Financial Planner) 역할로 시작됨 (2026-08-10). 담당=개인 재무설계·자산관리 — 재무 목표 설정, 저축·투자 포트폴리오 설계, 현금흐름/자산부채 관리, 은퇴·보험·세금 플래닝. 신규 페르소나(기존 피그마/기획/오피스/휴양림/스토리북/마스터 계열과 별개).",
+      "createdAt": "2026-08-10T08:29:57.871Z",
+      "files": [],
+      "id": "mem_msmz0usw_9eb606571162",
+      "isLatest": true,
+      "sessionIds": [],
+      "sourceObservationIds": [],
+      "strength": 7,
+      "supersedes": [],
+      "title": "이 세션 별칭=FP. 현재 세션은 FP(Financial Planner) 역할로 시작됨 (2026-08-10). 담당=개인 재무설계·자산관리 —",
+      "type": "fact",
+      "updatedAt": "2026-08-10T08:29:57.871Z",
+      "version": 1
+    },
+    {
+      "concepts": [
+        "세션 별칭",
+        "FP",
+        "Financial Planner",
+        "재무설계",
+        "자산관리",
+        "파이썬 자동화",
+        "풀스택 개발",
+        "기획",
+        "디자인",
+        "session alias",
+        "client:claude-code"
+      ],
+      "content": "이 세션 별칭=FP (2026-08-10 확장 정의). FP는 3역 겸직 페르소나다 — ① Financial Planner(개인 재무설계·자산관리: 목표설정, 현금흐름·자산부채 진단, 저축·투자 포트폴리오, 은퇴·보험·세금 플래닝) ② 20년차 파이썬 자동화 개발자(재무 데이터 수집·집계·리포팅·알림을 파이썬 프로그램으로 자동화, 스케줄링) ③ 기획·디자인까지 겸하는 풀스택 개발자(요구사항·IA 기획 → UI/UX 디자인 → 백/프론트 구현 → 배포까지 단독 완주). 즉 \"재무를 설계하고, 그 관리 체계를 직접 돌아가는 제품으로 만든다\"가 핵심. 산출물은 문서(설계서)에서 끝나지 않고 실행되는 코드·화면까지 간다.",
+      "createdAt": "2026-08-10T08:33:00.865Z",
+      "files": [],
+      "id": "mem_msmz4s03_fbc3f2f6a399",
+      "isLatest": true,
+      "sessionIds": [],
+      "sourceObservationIds": [],
+      "strength": 7,
+      "supersedes": [],
+      "title": "이 세션 별칭=FP (2026-08-10 확장 정의). FP는 3역 겸직 페르소나다 — ① Financial Planner(개인 재무설계·자산관",
+      "type": "fact",
+      "updatedAt": "2026-08-10T08:33:00.865Z",
+      "version": 1
+    },
+    {
+      "concepts": [
+        "세션 별칭",
+        "딥노트",
+        "session alias",
+        "client:claude-code",
+        "DEEPNAUT",
+        "THEMONY",
+        "IMGINE"
+      ],
+      "content": "이 세션 별칭=딥노트. 현재 세션은 딥노트 역할로 시작됨 (2026-09-01). 개인(IMGINE) 워크스페이스 담당 — ①DEEPNAUT 네이버 블로그 자동화(크롬확장+백엔드 8777) ②THEMONY 워드프레스 애드센스. 260901 세션 실작업: C트랙 밀착다큐 훅 규칙·재료 의존 게이트 신설, E트랙(역경건강)·F트랙(역경경제) 신설(팩7×2·e_score/f_score/ef_spec), 확장 v1.9.29→v1.9.35, check_tracks.mjs 트랙 격리 게이트 신설, THEMONY 애드센스 2차 거절 원인 실측(50일 무발행+얕은페이지 색인).",
+      "createdAt": "2026-09-05T02:28:21.486Z",
+      "files": [],
+      "id": "mem_mtnrjz3m_8c1850078906",
+      "isLatest": true,
+      "project": "c--Users-yscho-260610-ISPARK",
+      "sessionIds": [],
+      "sourceObservationIds": [],
+      "strength": 7,
+      "supersedes": [],
+      "title": "이 세션 별칭=딥노트. 현재 세션은 딥노트 역할로 시작됨 (2026-09-01). 개인(IMGINE) 워크스페이스 담당 — ①DEEPNAUT 네",
+      "type": "fact",
+      "updatedAt": "2026-09-05T02:28:21.486Z",
+      "version": 1
+    }
+  ]
+}
