@@ -112,6 +112,7 @@
 - [★slide-master PPTX 변환 함정 3종](reference_slide_master_pptx_export_traps.md) — 게이트·SVG렌더 통과해도 PowerPoint서 붕괴. ①tspan줄묶음→독립text ②Pretendard Variable→한글대체(정적 설치·NameFarEast로 검증) ③굵기2단→heavy/light_family+w400. 회람=SVG발 PDF. ★setContent는 ../images 이미지 소실·대조 스크립트는 검사 건수 출력
 - [Figma SECTION 상대좌표](reference_figma_section_relative_coords.md) · [스킬 설치](reference_figma_skills_install.md) — 절대좌표는 밖으로 튕김
 - [NativeWind Animated className](reference_nativewind_animated_classname.md) — Animated.View엔 style만 · ★값0 transform 클래스(translate-x-0)는 CSS 안 낸다 → fixed 가두려면 style transform · Modal 은 못 가둔다
+- [★FP 보고는 데이터만](feedback_fp_report_data_only.md) — 260918 지시. 실측·판정이 본문 · 해석은 한두 줄 · 묻지 않은 조언·훈계 금지 · 예측은 짧은 단서로만
 - [FP 세션(재무설계+자동화)](project_fp_finance_automation.md) — 3역 겸직. 데이터=로컬전용·git금지
 
 ## 블로그 / THEMONY
